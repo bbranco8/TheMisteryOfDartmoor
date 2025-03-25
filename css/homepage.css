@@ -1,0 +1,30 @@
+header > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+main > a > img {
+    position: absolute;
+}
+
+#dewer {
+    bottom: 0;
+    left: 0;
+} 
+
+#baskerville {
+    top: 0;
+    left: 20%;
+}
+
+#house {
+    bottom: 0;
+    left: 50%;
+}
+
+#grimpen {
+    top: 20px; /* Adicionei "px" para evitar erro */
+    right: 0;
+}

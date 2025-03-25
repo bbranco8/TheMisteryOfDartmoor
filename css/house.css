@@ -1,0 +1,18 @@
+main > img {
+    position: absolute;
+}
+
+#table {
+    bottom: 0;
+    left: 40%;
+} 
+
+#tv {
+    top: 20%;
+    left: 30%;
+} 
+
+#cabinet {
+    top: 20%;
+    left: 12%;
+}
