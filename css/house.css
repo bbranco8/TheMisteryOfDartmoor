@@ -3,10 +3,6 @@ html {
     background-color: #303752;
 } */
 
-main > img {
-    position: absolute;
-}
-
 #table {
     bottom: 0;
     left: 0;
@@ -17,22 +13,36 @@ main > img {
     left: 10%;
 }
 
-#tv {
-    top: 8%;
-    left: 12%;
-}
-
-#tv_cabinet {
-    top: 10%;
-    left: 12%;
-}
-
 #mirror {
-    left: 0;
+    left: 10%;
     top: 0;
 }
 
 #cabinet {
-    right: 0;
+    right: 10%;
     top: 0;
+}
+
+#tv {
+    top: 15%;
+    left: 40%;
+    z-index: 10;
+}
+
+#tv:hover {
+    cursor: pointer;
+}
+
+#tv_cabinet {
+    top: 25%;
+    left: 28%;
+}
+
+#tv_cabinet:hover {
+    cursor: pointer;
+}
+
+#book {
+    bottom: 10%;
+    left: 60%;
 }
