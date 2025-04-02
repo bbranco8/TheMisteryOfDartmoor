@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let tvOn = false; 
 
     let tv_cabinet = document.querySelector("#tv_cabinet");
+    let book = document.querySelector("#book");
 
     tv.addEventListener("click", function () {
         if (!tvOn) {
@@ -18,4 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
     tv_cabinet.addEventListener("click", function () {
         window.location.href = "house_drawer.html";
     });
+
+    book.addEventListener("click", function () {
+        window.location.href = "house_book.html";
+    });
 });
+
+window.onresize = function() {
+    window.resizeTo(1200, 700);
+}; 

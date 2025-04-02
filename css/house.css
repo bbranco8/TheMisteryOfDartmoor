@@ -46,3 +46,7 @@ html {
     bottom: 10%;
     left: 60%;
 }
+
+#book:hover {
+    cursor: pointer;
+}

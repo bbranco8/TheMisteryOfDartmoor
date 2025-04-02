@@ -5,3 +5,10 @@ body {
 main > img {
     position: absolute;
 }
+
+html, body {
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0;
+}
