@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="css/geral.css">
   <link rel="stylesheet" href="css/house.css">
   <title> TheMisteryOfDartmoor </title>
+
+  <script>
+    window.onresize = function() {
+      window.resizeTo(1200, 700);
+    }; 
+  </script>
 </head>
 
 <body>
@@ -15,13 +21,24 @@
   </header>
 
   <main>
+    <img id="floor" src="images/house/floor.png" height="100%" width="100%" alt="floor">
+    <img id="wall_right" src="images/house/wall_right.png" height="100%" width="100%" alt="wall">
+    <img id="wall_left" src="images/house/wall_left.png" height="100%" width="100%" alt="wall">
     <img id="table" src="images/house/table.png" width="100%" alt="table">
     <img id="mirror" src="images/house/mirror.png" width="10%" alt="mirror">
     <img id="cabinet" src="images/house/cabinet.png" width="15%" alt="cabinet">
-    <img id="tv" src="images/house/tv_off.png" width="20%" alt="tv">
-    <img id="tv_cabinet" src="images/house/tv_cabinet.png" width="40%" alt="cabinet">
-    <img id="book" src="images/house/book.png" width="15%" alt="book">
+    <img id="tv" src="images/house/tv_off.png" width="20%" alt="tv" 
+         onmouseover="this.src='images/house/tv_off_mov.png'" 
+         onmouseout="this.src='images/house/tv_off.png'" 
+         onclick="this.src='images/house/tv_on.png'">
+    <img id="tv_cabinet" src="images/house/tv_cabinet.png" width="40%" alt="cabinet" 
+         onmouseover="this.src='images/house/tv_cabinet_mov.png'" 
+         onmouseout="this.src='images/house/tv_cabinet.png'" 
+         onclick="window.location.href='house_drawer.html'">
+    <img id="book" src="images/house/book.png" width="15%" alt="book"
+          onmouseover="this.src='images/house/book_mov.png'" 
+         onmouseout="this.src='images/house/book.png'"
+         onclick="window.location.href='house_book.html'">
   </main>
   
-  <script src="javascript/house.js"></script>
 </body>

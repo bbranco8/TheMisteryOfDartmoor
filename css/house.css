@@ -1,7 +1,21 @@
-/*
 html {
-    background-color: #303752;
-} */
+    background-color: #67697b;
+}
+
+#floor {
+    bottom: 0;
+    left: 0;
+}
+
+#wall_right {
+    top: 0;
+    right: 0;
+}
+
+#wall_left {
+    top: 0;
+    left: 0;
+}
 
 #table {
     bottom: 0;
@@ -14,17 +28,17 @@ html {
 }
 
 #mirror {
-    left: 10%;
+    left: 20%;
     top: 0;
 }
 
 #cabinet {
-    right: 10%;
-    top: 0;
+    right: 15%;
+    bottom: 20%;
 }
 
 #tv {
-    top: 15%;
+    bottom: 40%;
     left: 40%;
     z-index: 10;
 }
@@ -34,7 +48,7 @@ html {
 }
 
 #tv_cabinet {
-    top: 25%;
+    bottom: 26%;
     left: 28%;
 }
 

@@ -1,3 +1,9 @@
 html {
     background-color: #a06b37;
 }
+
+img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

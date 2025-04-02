@@ -24,7 +24,3 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = "house_book.html";
     });
 });
-
-window.onresize = function() {
-    window.resizeTo(1200, 700);
-}; 
