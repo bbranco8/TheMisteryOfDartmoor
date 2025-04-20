@@ -16,3 +16,11 @@ html {
     left: 30%;
     top: 30%;
 }
+
+#gun:hover {
+    transform: rotate(-10deg);
+  }
+
+  #photograph:hover {
+    transform: rotate(10deg);
+  }

@@ -1,0 +1,30 @@
+#florest {
+    top: 0;
+    left: 0;
+}
+
+#warning {
+    bottom: 0;
+    left: 10%;
+}
+
+#dog {
+    bottom: 12%;
+    right: 38%;
+}
+
+#footprints {
+    bottom: 12%;
+    left: 39%
+}
+
+#dark_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background: radial-gradient(circle 200px at var(--x, 50%) var(--y, 50%), transparent 0%, rgba(0, 0, 0, 0.95) 100%);
+    z-index: 10;
+  }

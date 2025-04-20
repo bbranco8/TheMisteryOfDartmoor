@@ -12,3 +12,18 @@ html, body {
     overflow: hidden;
     margin: 0;
 }
+
+header {
+    position: absolute;
+    display: flex;
+    z-index: 12;
+    width: 95%;
+    justify-content: end;
+    padding: 3%;
+}
+
+header > a {
+    color: #E1D0BC;
+    font-size: 1.58rem; 
+    text-decoration: none;
+}
