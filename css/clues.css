@@ -1,0 +1,15 @@
+.clue {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.clue > img {
+    width: 35%;
+}
+
+#clues_container {
+    margin: 15%;
+    margin-top: 25%;
+}

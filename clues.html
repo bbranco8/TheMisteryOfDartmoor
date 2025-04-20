@@ -6,17 +6,24 @@
   <meta name="viewport" content="width=device-width,
     initial-scale=1">
   <link rel="stylesheet" href="css/geral.css">
-  <link rel="stylesheet" href="css/house_book.css">
+  <link rel="stylesheet" href="css/clues.css">
   <title> TheMisteryOfDartmoor </title>
+
+  <script>
+    window.onresize = function() {
+      window.resizeTo(1200, 700);
+    }; 
+  </script>
 </head>
 
 <body>
   <header>
-    <a href="house.html"> BACK </a>
+    <a href="homepage.html"> MAP </a>
   </header>
 
   <main>
-    <img src="images/house/book_open.png" width="90%" alt="drawer">
+    <div id="clues_container"></div>
   </main>
-  
+
+  <script src="javascript/clues.js"></script>
 </body>
