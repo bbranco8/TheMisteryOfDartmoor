@@ -10,5 +10,7 @@ function addClue(id, imgSrc, description) {
     }
 
     // Redireciona para a página do livro
-    window.location.href = 'house_book.html';
+    if (id === 'book') {
+        window.location.href = 'house_book.html';
+    }
 }
