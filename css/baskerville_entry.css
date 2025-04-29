@@ -1,0 +1,43 @@
+body {
+    background-color: #67697b;
+}
+
+#password {
+    position: absolute; 
+    top: 28%; 
+    left: 48%; 
+    transform: translateX(-50%); 
+    text-align: center;
+}
+
+#letter_fields {
+    display: flex; 
+    gap: 10px; 
+    justify-content: center;
+}
+
+.letter_spot {
+    display: inline-block;
+    width: 20px;
+    border-bottom: 2px solid #4f736d;
+    color: #4f736d;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#submit {
+    margin-top: 20px; 
+    padding: 5px 20px; 
+    background: #4f736d;
+    color: #243532;; 
+    border: none; 
+    border-radius: 15px; 
+    cursor: pointer;
+}
+
+#result_message {
+    margin-top: 50%; 
+    margin-left: 10%;
+    color: #4f736d;
+}

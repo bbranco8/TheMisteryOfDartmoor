@@ -1,0 +1,39 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const letter_spots = document.querySelectorAll('.letter_spot');
+    const submit = document.getElementById('submit');
+    const result_message = document.getElementById('result_message');
+    let current_input = '';
+
+    document.addEventListener('keydown', (e) => {
+      if (/^[a-zA-Z ]$/.test(e.key) && current_input.length < 10) {
+        current_input += e.key.toUpperCase();
+        update_letters();
+      } else if (e.key === 'Backspace') {
+        current_input = current_input.slice(0, -1);
+        update_letters();
+      }
+    });
+
+    function update_letters() {
+      const chars = current_input.padEnd(10, ' ').split('');
+      letter_spots.forEach((spot, i) => {
+        spot.textContent = chars[i];
+      });
+    }
+
+    submit.addEventListener('click', () => {
+      const attempt = current_input.trim().toUpperCase();
+      if (attempt === 'LIBERTY IN') {
+        result_message.textContent = 'ACCESS GRANTED';
+        result_message.style.color = '#4f736d';
+        
+        // Espera 2 segundos e redireciona
+        setTimeout(() => {
+          window.location.href = 'baskerville_first.html'; 
+        }, 2000);
+      } else {
+        result_message.textContent = 'ACCESS DENIED';
+        result_message.style.color = 'red';
+      }
+    });
+  });
