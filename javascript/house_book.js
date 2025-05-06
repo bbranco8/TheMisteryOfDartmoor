@@ -1,15 +1,15 @@
-function activate_hound() {
-    let text_hound = document.querySelector('#text_hound');
-    let sherlock_hound = document.querySelector('#sherlock_hound');
+function activate_word() {
+    let text_word = document.querySelector('#text_word');
+    let sherlock_word = document.querySelector('#sherlock_word');
 
-    text_hound.style.display = 'block';
-    sherlock_hound.style.display = 'block';
+    text_word.style.display = 'block';
+    sherlock_word.style.display = 'block';
 }
 
-function deactivate_hound() {
-    let text_hound = document.querySelector('#text_hound');
-    let sherlock_hound = document.querySelector('#sherlock_hound');
+function deactivate_word() {
+    let text_word = document.querySelector('#text_word');
+    let sherlock_word = document.querySelector('#sherlock_word');
 
-    text_hound.style.display = 'none';
-    sherlock_hound.style.display = 'none';
+    text_word.style.display = 'none';
+    sherlock_word.style.display = 'none';
 }

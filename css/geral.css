@@ -37,13 +37,16 @@ header > a {
 
 
 /* Sherlock's interventions */
-#text_hound, #sherlock_hound,
+#text_word, #sherlock_word,
 #text_photo, #sherlock_photo,
+#text_warning, #sherlock_warning,
+#text_hound, #sherlock_hound,
 #text_pass, #sherlock_pass {
     display: none;
+    z-index: 15;
 }
 
-#text_hound, #text_photo, #text_pass {
+#text_word, #text_photo, #text_warning, #text_pass, #text_hound {
     width: 20%;
     margin: 15% 15%;
     text-align: center;
@@ -53,7 +56,16 @@ header > a {
     border-radius: 20px;
 }
 
-#sherlock_hound, #sherlock_photo, #sherlock_pass {
+#text_warning {
+    margin: 15% 55%;
+}
+
+#sherlock_word, #sherlock_photo, #sherlock_hound, #sherlock_pass {
     bottom: -5%;
     left: 0;
+}
+
+#sherlock_warning {
+    bottom: -5%;
+    right: 10%;
 }
