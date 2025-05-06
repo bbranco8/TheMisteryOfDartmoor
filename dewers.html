@@ -8,12 +8,6 @@
   <link rel="stylesheet" href="css/geral.css">
   <link rel="stylesheet" href="css/dewers.css">
   <title> TheMisteryOfDartmoor </title>
-
-  <script>
-    window.onresize = function() {
-      window.resizeTo(1200, 700);
-    }; 
-  </script>
 </head>
 
 <body>
@@ -27,20 +21,20 @@
     <img id="footprints" src="images/dewers/footprints.png" width="13%" alt="wall">
     <img id="warning" src="images/dewers/warning.png" width="20%" alt="table"
           onmouseover="activate_warning()"
-          onmouseout="deactivate_warning()">
-    <img id="dog" src="images/dewers/dog.png" width="20%" alt="dog">
+          onmouseout="deactivate_warning()"
+          onclick="addClue('warning', 'images/dewers/warning.png');">
+    <img id="dog" src="images/dewers/dog.png" width="20%" alt="dog"
+          onclick="addClue('dog', 'images/dewers/dog.png');">
 
     <div id="dark_overlay"></div>
 
-    <p id="text_warning">Danger signs have one function: to keep curious people away. 
-      But in remote places like this? They are best used by those who have something to hide...</p>
+    <img id="text_warning" src="images/text_warning.png" width="15%" alt="sherlock">
     <img id="sherlock_warning" src="images/sherlock_2.png" width="15%" alt="sherlock">
 
-    <p id="text_hound"> I saw it, John. A gigantic hound! I've always been able to trust my senses, 
-      the evidence of my own eyes, until now. I can't believe that i saw some kind of monster but i DID see it. 
-      So the question is HOW? We need to go back to Baskerville to test a theory!</p>
+    <img id="text_hound" src="images/text_hound.png" width="15%" alt="text">
     <img id="sherlock_hound" src="images/sherlock_1.png" width="15%" alt="sherlock">
   </main>
 
+  <script src="javascript/add_clues.js"></script>
   <script src="javascript/dewers.js"></script>
 </body>

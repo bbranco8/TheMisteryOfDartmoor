@@ -3,34 +3,33 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,
-    initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/geral.css">
   <link rel="stylesheet" href="css/house_book.css">
-  <title> TheMisteryOfDartmoor </title>
+  <title>TheMisteryOfDartmoor</title>
 </head>
 
 <body>
   <header>
-    <a href="house.html"> BACK </a>
-    <a href="map.html"> MAP </a>
-    <a href="clues.html"> CLUES </a>
+    <a href="house.html">BACK</a>
+    <a href="map.html">MAP</a>
+    <a href="clues.html">CLUES</a>
   </header>
 
   <main>
     <img id="drawer" src="images/house/book_open.png" width="90%" alt="drawer">
-    <img id="word" src="images/house/word_1.png" width="20%" alt="word"
-    onclick="addClue('word_1', 'images/house/word_1.png');">
+    <img id="word" src="images/house/word_1.png" width="20%" alt="word" 
+         onclick="addClue('word_1', 'images/house/word_1.png');">
     <img id="word_2" src="images/house/word_2.png" width="20%" alt="word_2"
-         onmouseover="activate_word()"
-         onmouseout="deactivate_word()"
+         onmouseover="activate_word()" onmouseout="deactivate_word()" 
          onclick="addClue('word_2', 'images/house/word_2.png');">
 
-    <p id="text_word">Why does he call it a hound? Why a hound? It's odd, isn't it? 
-      What if it's individual letters? H.O.U.N.D.</p>
+    <img id="text_word" src="images/text_word.png" width="15%" alt="sherlock">
     <img id="sherlock_word" src="images/sherlock_1.png" width="15%" alt="sherlock">
   </main>
 
-  <script src="javascript/house.js"></script>
+  <script src="javascript/add_clues.js"></script>
   <script src="javascript/house_book.js"></script>
 </body>
+
+</html>
