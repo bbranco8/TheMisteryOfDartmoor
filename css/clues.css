@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -10,7 +11,7 @@ html {
 
 #clues_container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -19,6 +20,6 @@ html {
 }
 
 .clue > img {
-    width: 250px;
+    width: 65%;
     height: auto;
 }

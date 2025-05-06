@@ -6,16 +6,18 @@
 #warning {
     bottom: 0;
     left: 10%;
+    cursor: pointer;
 }
 
 #dog {
     bottom: 12%;
     right: 38%;
+    cursor: pointer;
 }
 
 #footprints {
     bottom: 12%;
-    left: 39%
+    left: 39%;
 }
 
 #dark_overlay {

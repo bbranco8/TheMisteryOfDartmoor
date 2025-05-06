@@ -2,8 +2,25 @@ html {
     background-color: #a06b37;
 }
 
-img {
+#drawer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#word {
+    top: 40%;
+    left: 26%;
+}
+
+#word_2 {
+    top: 68%;
+    left: 50%;
+}
+
+#word:hover,
+#word_2:hover {
+    cursor: pointer;
+    transform: rotate(2deg);
+}
+

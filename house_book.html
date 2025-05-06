@@ -13,10 +13,24 @@
 <body>
   <header>
     <a href="house.html"> BACK </a>
+    <a href="map.html"> MAP </a>
+    <a href="clues.html"> CLUES </a>
   </header>
 
   <main>
-    <img src="images/house/book_open.png" width="90%" alt="drawer">
+    <img id="drawer" src="images/house/book_open.png" width="90%" alt="drawer">
+    <img id="word" src="images/house/word_1.png" width="20%" alt="word"
+    onclick="addClue('word_1', 'images/house/word_1.png');">
+    <img id="word_2" src="images/house/word_2.png" width="20%" alt="word_2"
+         onmouseover="activate_hound()"
+         onmouseout="deactivate_hound()"
+         onclick="addClue('word_2', 'images/house/word_2.png');">
+
+    <p id="text_hound">Why does he call it a hound? Why a hound? It's odd, isn't it? 
+      What if it's individual letters? H.O.U.N.D.</p>
+    <img id="sherlock_hound" src="images/sherlock_1.png" width="15%" alt="sherlock">
   </main>
-  
+
+  <script src="javascript/house.js"></script>
+  <script src="javascript/house_book.js"></script>
 </body>

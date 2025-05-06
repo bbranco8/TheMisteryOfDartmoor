@@ -1,5 +1,10 @@
-
 document.addEventListener('DOMContentLoaded', function () {
+   // Só limpa as pistas se for uma nova sessão de navegação
+   if (!sessionStorage.getItem('sessionStarted')) {
+    localStorage.removeItem('clues');
+    sessionStorage.setItem('sessionStarted', 'true');
+  }
+
   let clues = JSON.parse(localStorage.getItem('clues')) || [];
   let container = document.getElementById('clues_container');
   let placedClues = [];
@@ -33,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       container.appendChild(clueDiv);
 
-      // Aguarda imagem carregar para medir
       clueDiv.querySelector('img').onload = function () {
         let width = clueDiv.offsetWidth;
         let height = clueDiv.offsetHeight;

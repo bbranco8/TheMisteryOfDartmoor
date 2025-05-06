@@ -13,6 +13,8 @@
 <body>
   <header>
     <a href="house.html"> BACK </a>
+    <a href="map.html"> MAP </a>
+    <a href="clues.html"> CLUES </a>
   </header>
 
   <main>
@@ -20,8 +22,15 @@
     <img id="gun" src="images/house/gun.png" width="30%" alt="gun"
     onclick="addClue('gun', 'images/house/gun.png');">
     <img id="photograph" src="images/house/image.png" width="15%" alt="photograph"
+    onmouseover="activate_photo()"
+    onmouseout="deactivate_photo()"
     onclick="addClue('photograph', 'images/house/image.png');">
+
+
+    <p id="text_photo">Dr. Frankland seems to be very close to Henry's father, maybe we should talk to him. </p>
+    <img id="sherlock_photo" src="images/sherlock_2.png" width="15%" alt="sherlock">
   </main>
   
   <script src="javascript/house.js"></script>
+  <script src="javascript/house_drawer.js"></script>
 </body>

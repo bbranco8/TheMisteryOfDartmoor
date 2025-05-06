@@ -1,0 +1,30 @@
+img {
+    bottom: 0;
+}
+
+#john {
+    right: 0;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 40%;
+    margin: 20% auto;
+    text-align: center;
+    position: relative;
+}
+
+section > p {
+    padding: 2%;
+}
+
+section > a {
+    display: block;
+    margin: 2%;
+    padding: 2%;
+    background-color: #E1D0BC;
+    border-radius: 20px;
+}

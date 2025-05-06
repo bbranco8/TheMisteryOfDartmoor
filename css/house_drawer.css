@@ -10,17 +10,21 @@ html {
 #gun {
     left: 60%;
     top: 25%;
+    cursor: pointer;
 }
 
 #photograph {
     left: 30%;
     top: 30%;
+    cursor: pointer;
 }
 
-#gun:hover {
-    transform: rotate(-10deg);
-  }
-
-  #photograph:hover {
+#gun:hover,
+#photograph:hover {
+    cursor: pointer;
     transform: rotate(10deg);
-  }
+}
+
+#text_photo {
+    margin: 16% 12%;
+}

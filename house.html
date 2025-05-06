@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <a href="homepage.html"> MAP </a>
+    <a href="map.html"> MAP </a>
     <a href="clues.html"> CLUES </a>
   </header>
 
@@ -23,18 +23,18 @@
     <img id="table" src="images/house/table.png" width="100%" alt="table">
     <img id="mirror" src="images/house/mirror.png" width="8%" alt="mirror">
     <img id="cabinet" src="images/house/cabinet.png" width="15%" alt="cabinet">
-    <img id="tv" src="images/house/tv_off.png" width="20%" alt="tv" 
-         onmouseover="this.src='images/house/tv_off_mov.png'" 
-         onmouseout="this.src='images/house/tv_off.png'" 
-         onclick="this.src='images/house/tv_on.png'; addClue('tv', 'images/house/tv_on.png');">
-    <img id="tv_cabinet" src="images/house/tv_cabinet.png" width="40%" alt="cabinet" 
-         onmouseover="this.src='images/house/tv_cabinet_mov.png'" 
-         onmouseout="this.src='images/house/tv_cabinet.png'" 
+    <img id="tv" src="images/house/tv_off.png" width="20%" alt="tv"
+         onmouseover="this.src='images/house/tv_off_mov.png'"
+         onmouseout="this.src='images/house/tv_off.png'"
+         onclick="this.src='images/house/tv_on.png', addClue('tv', 'images/house/tv_on.png');">
+    <img id="tv_cabinet" src="images/house/tv_cabinet.png" width="40%" alt="cabinet"
+         onmouseover="this.src='images/house/tv_cabinet_mov.png'"
+         onmouseout="this.src='images/house/tv_cabinet.png'"
          onclick="window.location.href='house_drawer.html'">
-    <img id="book" src="images/house/book.png" width="15%" alt="book"
-         onmouseover="this.src='images/house/book_mov.png'" 
+    <img id="book" src="images/house/book.png" width="20%" alt="book"
+         onmouseover="this.src='images/house/book_mov.png'"
          onmouseout="this.src='images/house/book.png'"
-         onclick="addClue('book', 'images/house/book.png');">
+         onclick="window.location.href='house_book.html'">
   </main>
   
   <script src="javascript/house.js"></script>

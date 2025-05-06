@@ -1,0 +1,11 @@
+img {
+    bottom: 0;
+}
+
+#desk, #tv_off {
+    right: 0;
+}
+
+#tv_off {
+    bottom: 16%;
+}
