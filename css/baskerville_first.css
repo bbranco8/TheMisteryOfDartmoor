@@ -31,11 +31,34 @@
     right: 8%;
 }
 
-#dr_frankland:hover, #dr_stapland:hover {
+#dr_frankland:hover,
+#dr_stapland:hover {
     cursor: pointer;
 }
 
 #cage {
     bottom: 0;
     right: 0;
+}
+
+#timer {
+    position: absolute;
+    padding: 3%;
+    display: flex;
+    z-index: 12;
+    width: 100%;
+    justify-content: center;
+    color: #3f4154;
+    font-size: 1.6rem;
+}
+
+#exit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 9999;
+    display: none;
 }

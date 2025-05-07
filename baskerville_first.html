@@ -25,6 +25,9 @@
       <div id="clues_container"></div>
     </div>
 
+    <!-- timer display -->
+    <div id="timer">5:00</div>
+
     <!-- main page -->
     <img id="background" src="images/baskerville/background.png" width="100%" alt="background">
     <img id="wall" src="images/baskerville/wall.png" width="100%" height="90%" alt="wall">
@@ -39,7 +42,7 @@
     onclick="addClue('dr_frankland', 'images/baskerville/dr_frankland.png');">
 
     <!-- questions and answers for frankland -->
-    <div id="frankland_questions" class="question hidden">
+    <section id="frankland_questions" class="question hidden">
       <div class="question_images">
         <img src="images/baskerville/questions/question_frankland_1.png" width="53%" alt="question"
              id="question_1" onclick="show_answer('q1')">
@@ -49,11 +52,14 @@
       <div id="answer_container" class="hidden">
         <img id="answer" src="" width="53%" alt="answer">
       </div>
-    </div>
+    </section>
 
     <!-- sherlock's reflection -->
     <img id="text_stapleton" src="images/baskerville/text_stapleton.png" width="15%" alt="text">
     <img id="sherlock_stapleton" src="images/sherlock_1.png" width="10%" alt="sherlock">
+
+    <!-- exit image -->
+    <img id="exit" src="images/baskerville/entry.png" height="100%" width="100%" alt="exit">
   </main>
 
   <script src="javascript/clues.js"></script>

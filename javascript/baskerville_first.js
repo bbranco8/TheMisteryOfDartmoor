@@ -1,4 +1,48 @@
-// questions and answers for frankland
+// TIMER
+let timer = document.querySelector("#timer");
+let entry = document.querySelector("#exit");
+
+// Set the initial time (in seconds)
+let time_left = 5 * 60; // 5 minutes in seconds
+let interval;
+
+function updateTimer() {
+  let minutes = Math.floor(time_left / 60);
+  let seconds = time_left % 60;
+
+  // Format time as mm:ss
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+
+  timer.textContent = minutes + ":" + seconds;
+
+  // If time runs out
+  if (time_left <= 0) {
+    clearInterval(interval);
+    redirect();
+  }
+  time_left--;
+}
+
+// Start the timer
+interval = setInterval(updateTimer, 100);
+
+// Show the entry image and redirect after a few seconds
+function redirect() {
+  // Show entry image
+  entry.style.display = "block";
+
+  // Wait a few seconds before redirecting
+  setTimeout(function () {
+    window.location.href = "map.html";
+  }, 5000); // 5000 milliseconds = 5 seconds
+}
+
+
+
+// --------------------------------------
+// QUESTIONS AND ANSWERS FOR DR FRANKLAND
 let frankland = document.querySelector('#dr_frankland');
 let questions = document.querySelector('#frankland_questions');
 let question_images = document.querySelector('.question_images');
@@ -81,7 +125,9 @@ function show_answer(question_id) {
 }
 
 
-// sherlock's reflection of dr stapleton
+
+// --------------------------------------
+// SHERLOCK'S REFLECTION OF DR STAPLETON
 function activate_stapleton() { 
     let text_stapleton = document.querySelector('#text_stapleton');
     let sherlock_stapleton = document.querySelector('#sherlock_stapleton');
