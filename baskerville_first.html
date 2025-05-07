@@ -12,15 +12,51 @@
 
 <body>
   <header>
-    <a href="map.html"> MAP </a>
-    <a href="clues.html"> CLUES </a>
+    <a href="map.html"><img src="images/nav/map.png" width="85%" alt="MAP"> </a>
+    <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
   </header>
 
   <main>
-    <img id="background" src="images/baskerville/background.png" width="100%" alt="desks">
+    <!-- show clues -->
+    <div id="clues_overlay" class="overlay hidden">
+      <div class="overlay_header">
+        <button id="close_clues"><img src="images/nav/exit.png" width="85%" alt="X"></button>
+      </div>
+      <div id="clues_container"></div>
+    </div>
+
+    <!-- main page -->
+    <img id="background" src="images/baskerville/background.png" width="100%" alt="background">
+    <img id="wall" src="images/baskerville/wall.png" width="100%" height="90%" alt="wall">
+    <img id="ground" src="images/baskerville/ground.png" width="100%" height="42%" alt="ground">
     <img id="desks" src="images/baskerville/desks.png" width="45%" alt="desks">
-    <img id="cage" src="images/baskerville/cage.png" width="100%" alt="cage">
+    <img id="monkey" src="images/baskerville/monkey.png" width="8%" alt="monkey">
+    <img id="cage" src="images/baskerville/cage.png" width="40%" alt="cage">
+    <img id="dr_stapland" src="images/baskerville/dr_stapleton.png" width="15%" alt="dr_stapland"
+    onclick="addClue('dr_stapleton', 'images/baskerville/dr_stapleton.png');"
+    onmouseover="activate_stapleton()" onmouseout="deactivate_stapleton()">
+    <img id="dr_frankland" src="images/baskerville/dr_frankland.png" width="15%" alt="dr_frankland"
+    onclick="addClue('dr_frankland', 'images/baskerville/dr_frankland.png');">
+
+    <!-- questions and answers for frankland -->
+    <div id="frankland_questions" class="question hidden">
+      <div class="question_images">
+        <img src="images/baskerville/questions/question_frankland_1.png" width="53%" alt="question"
+             id="question_1" onclick="show_answer('q1')">
+        <img src="images/baskerville/questions/question_frankland_2.png" width="53%" alt="question"
+             id="question_2" onclick="show_answer('q2')">
+      </div>
+      <div id="answer_container" class="hidden">
+        <img id="answer" src="" width="53%" alt="answer">
+      </div>
+    </div>
+
+    <!-- sherlock's reflection -->
+    <img id="text_stapleton" src="images/baskerville/text_stapleton.png" width="15%" alt="text">
+    <img id="sherlock_stapleton" src="images/sherlock_1.png" width="10%" alt="sherlock">
   </main>
 
+  <script src="javascript/clues.js"></script>
   <script src="javascript/add_clues.js"></script>
+  <script src="javascript/baskerville_first.js"></script>
 </body>

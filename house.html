@@ -12,11 +12,20 @@
 
 <body>
   <header>
-    <a href="map.html"> MAP </a>
-    <a href="clues.html"> CLUES </a>
+    <a href="map.html"><img src="images/nav/map.png" width="85%" alt="MAP"> </a>
+    <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
   </header>
 
   <main>
+    <!-- show clues -->
+    <div id="clues_overlay" class="overlay hidden">
+      <div class="overlay_header">
+        <button id="close_clues"><img src="images/nav/exit.png" width="85%" alt="X"></button>
+      </div>
+      <div id="clues_container"></div>
+    </div>
+
+    <!-- main page -->
     <img id="floor" src="images/house/floor.png" height="100%" width="100%" alt="floor">
     <img id="wall_right" src="images/house/wall_right.png" height="100%" width="100%" alt="wall">
     <img id="wall_left" src="images/house/wall_left.png" height="100%" width="100%" alt="wall">
@@ -34,8 +43,9 @@
     <img id="book" src="images/house/book.png" width="20%" alt="book"
          onmouseover="this.src='images/house/book_mov.png'"
          onmouseout="this.src='images/house/book.png'"
-         onclick="window.location.href='house_book.html'">
+         onclick="window.location.href='house_book.html', addClue('book', 'images/house/book.png');">
   </main>
   
+  <script src="javascript/clues.js"></script>
   <script src="javascript/add_clues.js"></script>
 </body>

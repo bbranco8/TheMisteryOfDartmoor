@@ -12,12 +12,20 @@
 
 <body>
   <header>
-    <a href="house.html"> BACK </a>
-    <a href="map.html"> MAP </a>
-    <a href="clues.html"> CLUES </a>
+    <a href="house.html"> <img src="images/nav/back.png" width="85%" alt="BACK"> </a>
+    <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
   </header>
 
   <main>
+    <!-- show clues -->
+    <div id="clues_overlay" class="overlay hidden">
+      <div class="overlay_header">
+        <button id="close_clues"><img src="images/nav/exit.png" width="85%" alt="X"></button>
+      </div>
+      <div id="clues_container"></div>
+    </div>
+
+    <!-- main page -->
     <img id="drawer" src="images/house/drawer.png" width="100%" alt="drawer">
     <img id="gun" src="images/house/gun.png" width="30%" alt="gun"
     onclick="addClue('gun', 'images/house/gun.png');">
@@ -26,10 +34,11 @@
     onmouseout="deactivate_photo()"
     onclick="addClue('photograph', 'images/house/image.png');">
 
-    <img id="text_photo" src="images/text_photo.png" width="15%" alt="text">
-    <img id="sherlock_photo" src="images/sherlock_2.png" width="15%" alt="sherlock">
+    <img id="text_photo" src="images/house/text_photo.png" alt="text">
+    <img id="sherlock_photo" src="images/sherlock_2.png" width="18%" alt="sherlock">
   </main>
   
+  <script src="javascript/clues.js"></script>
   <script src="javascript/add_clues.js"></script>
   <script src="javascript/house_drawer.js"></script>
 </body>

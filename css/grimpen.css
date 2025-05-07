@@ -7,3 +7,8 @@
     bottom: 10%;
     left: 5%;
 }
+
+#sign:hover {
+    cursor: pointer;
+    transform: rotate(10deg);
+}

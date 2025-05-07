@@ -2,8 +2,8 @@ html {
     background-color: #a06b37;
 }
 
-#drawer {
-    top: 50%;
+#book {
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -14,7 +14,7 @@ html {
 }
 
 #word_2 {
-    top: 68%;
+    top: 70%;
     left: 51%;
 }
 

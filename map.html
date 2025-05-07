@@ -12,13 +12,25 @@
 
 <body>
   <header>
-    <a href="clues.html"> CLUES </a>
+    <a href="javascript:history.back()"><img src="images/nav/back.png" width="85%" alt="BACK"></a>
+    <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
   </header>
 
   <main>
-      <a href="dewers.html"> <img id="dewer" src="images/homepage/dewer.png" width="30%" alt="map"> </a>
-      <a href="baskerville_entry.html"> <img id="baskerville" src="images/homepage/baskerville.png" width="50%" alt="map"> </a>
-      <a href="house.html"> <img id="house" src="images/homepage/house.png" width="45%" alt="map"> </a>
-      <a href="grimpen.html"> <img id="grimpen" src="images/homepage/grimpen.png" width="25%" alt="map"> </a>
+    <!-- show clues -->
+    <div id="clues_overlay" class="overlay hidden">
+      <div class="overlay_header">
+        <button id="close_clues"><img src="images/nav/exit.png" width="85%" alt="X"></button>
+      </div>
+      <div id="clues_container"></div>
+    </div>
+
+    <!-- main page -->
+    <a href="dewers.html"> <img id="dewer" src="images/homepage/dewer.png" width="30%" alt="map"> </a>
+    <a href="baskerville_entry.html"> <img id="baskerville" src="images/homepage/baskerville.png" width="50%" alt="map"></a>
+    <a href="house.html"> <img id="house" src="images/homepage/house.png" width="45%" alt="map"> </a>
+    <a href="grimpen.html"> <img id="grimpen" src="images/homepage/grimpen.png" width="25%" alt="map"> </a>
   </main>
+
+  <script src="javascript/clues.js"></script>
 </body>
