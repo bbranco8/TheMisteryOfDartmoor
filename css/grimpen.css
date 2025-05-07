@@ -3,6 +3,10 @@
     left: 30%;
 }
 
+#hunter:hover {
+    cursor: pointer;
+}
+
 #sign {
     bottom: 10%;
     left: 5%;
@@ -12,3 +16,4 @@
     cursor: pointer;
     transform: rotate(10deg);
 }
+

@@ -16,9 +16,20 @@
     left: 0;
 }
 
-#monkey {
+#monkey_1 {
     right: 4%;
     bottom: 35%;
+}
+
+#monkey_2 {
+    right: 15%;
+    bottom: 40%;
+    transform: scaleX(-1);
+}
+
+#monkey_3 {
+    right: 25%;
+    bottom: 30%;
 }
 
 #dr_frankland {

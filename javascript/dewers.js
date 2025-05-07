@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     dog.addEventListener('mouseleave', () => {
         clearTimeout(hideTimeout);
+    
+        // Hide the elements when the mouse leaves
+        document.querySelector('#text_hound').style.display = 'none';
+        document.querySelector('#sherlock_hound').style.display = 'none';
     });
 
     window.activate_warning = function () {
