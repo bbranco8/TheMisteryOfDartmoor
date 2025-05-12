@@ -9,10 +9,17 @@
     cursor: pointer;
 }
 
-#dog {
-    bottom: 12%;
+#dog_box {
+    position: absolute;
+    bottom: 5%;
     right: 16%;
+    width: 25%; 
+    height: auto;
     cursor: pointer;
+}
+
+#dog {
+    width: 100%;
 }
 
 #footprints {
@@ -27,6 +34,6 @@
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    background: radial-gradient(circle 200px at var(--x, 50%) var(--y, 50%), transparent 0%, rgba(0, 0, 0, 0.95) 100%);
+    background: radial-gradient(circle 240px at var(--x, 50%) var(--y, 50%), transparent 0%, rgba(0, 0, 0, 0.95) 100%);
     z-index: 10;
   }

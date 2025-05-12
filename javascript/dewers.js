@@ -8,25 +8,39 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.style.setProperty('--y', `${y}px`);
     });
 
+    // Referências aos elementos
+    let dog_box = document.querySelector('#dog_box');
     let dog = document.querySelector('#dog');
-    let hideTimeout;
+    let text_hound = document.querySelector('#text_hound');
+    let sherlock_hound = document.querySelector('#sherlock_hound');
 
-    dog.addEventListener('mouseenter', () => {
+    let dog_disappeared = false; // <- adicionamos este estado
+
+    dog_box.addEventListener('mouseenter', () => {
+        if (dog_disappeared) return; // se já desapareceu, não faz mais nada
+
         hideTimeout = setTimeout(() => {
-            dog.style.opacity = '0';  // Torna invisível
+            dog.style.opacity = '0';
             dog.style.pointerEvents = 'none';
 
-            document.querySelector('#text_hound').style.display = 'block';
-            document.querySelector('#sherlock_hound').style.display = 'block';
+            text_hound.style.display = 'block';
+            sherlock_hound.style.display = 'block';
+
+            dog_disappeared = true; // marca como já escondido
         }, 1000);
     });
 
-    dog.addEventListener('mouseleave', () => {
+    dog_box.addEventListener('mouseleave', () => {
         clearTimeout(hideTimeout);
-    
-        // Hide the elements when the mouse leaves
-        document.querySelector('#text_hound').style.display = 'none';
-        document.querySelector('#sherlock_hound').style.display = 'none';
+
+        // se o cão ainda não desapareceu, podemos restaurar
+        if (!dog_disappeared) {
+            dog.style.opacity = '1';
+            dog.style.pointerEvents = 'auto';
+        }
+
+        text_hound.style.display = 'none';
+        sherlock_hound.style.display = 'none';
     });
 
     window.activate_warning = function () {
