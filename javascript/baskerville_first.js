@@ -98,10 +98,10 @@ function show_answer(question_id) {
     let answer_src = '';
     switch (question_id) {
         case 'q1':
-            answer_src = 'images/baskerville/questions/answer_frankland_1.png';
+            answer_src = 'images/baskerville/first/questions/answer_frankland_1.png';
             break;
         case 'q2':
-            answer_src = 'images/baskerville/questions/answer_frankland_2.png';
+            answer_src = 'images/baskerville/first/questions/answer_frankland_2.png';
             break;
     }
 

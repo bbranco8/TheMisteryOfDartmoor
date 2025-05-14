@@ -1,0 +1,77 @@
+#ground {
+    bottom: 0;
+}
+
+#background {
+    top: 0;
+    left: 0;
+}
+
+#wall {
+    top: 30%;
+}
+
+#desks {
+    bottom: 0;
+    left: 0;
+}
+
+#curtains {
+    bottom: 0;
+    right: 0;
+}
+
+#pc {
+    bottom: 35%;
+    left: 33%;
+}
+
+#pc:hover {
+    cursor: pointer;
+}
+
+#lights {
+    bottom: 55%;
+    left: 5%;
+}
+
+#lights:hover {
+    cursor: pointer;
+}
+
+#exit {
+    left: 50%;
+    bottom: 55%;
+}
+
+#exit:hover {
+    cursor: pointer;
+}
+
+.overlay {
+background-color: white;
+}
+
+#image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#fullscreen_image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#dark_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background: radial-gradient(circle 240px at var(--x, 50%) var(--y, 50%), transparent 0%, rgba(0, 0, 0, 0.95) 100%);
+    z-index: 10;
+}

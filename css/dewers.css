@@ -36,4 +36,4 @@
     pointer-events: none;
     background: radial-gradient(circle 240px at var(--x, 50%) var(--y, 50%), transparent 0%, rgba(0, 0, 0, 0.95) 100%);
     z-index: 10;
-  }
+}

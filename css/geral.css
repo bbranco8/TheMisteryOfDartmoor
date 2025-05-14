@@ -15,7 +15,7 @@ body {
 header {
     position: absolute;
     display: flex;
-    z-index: 12;
+    z-index: 15;
     width: 95%;
     justify-content: end;
     padding: 3%;
@@ -31,7 +31,7 @@ a {
     font-size: 1rem;
 }
 
-header>a {
+header > a {
     color: #E1D0BC;
     font-size: 1.58rem;
     padding-left: 3%;
@@ -59,12 +59,13 @@ header>a {
     padding: 3%;
 }
 
-#close_clues {
+#close_clues, #close_image {
     background: none;
     border: none;
 }
 
-#close_clues:hover {
+#close_clues:hover,
+#close_image:hover {
     cursor: pointer;
 }
 
@@ -130,7 +131,7 @@ header>a {
 }
 
 #text_stapleton {
-    margin: 20% 60%;
+    margin: 16% 65%;
 }
 
 #sherlock_word,
@@ -147,7 +148,7 @@ header>a {
 }
 
 #sherlock_stapleton {
-    bottom: -10%;
+    bottom: -5%;
     right: 35%;
 }
 
