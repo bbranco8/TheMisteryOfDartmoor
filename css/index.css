@@ -8,4 +8,11 @@ img {
 
 #tv_off {
     bottom: 16%;
+    cursor: pointer;
+}
+
+#play {
+    top: 27%;
+    right: 26%;
+    cursor: pointer;
 }

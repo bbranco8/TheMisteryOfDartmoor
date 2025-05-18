@@ -1,9 +1,6 @@
 #hunter {
     bottom: 0;
     left: 30%;
-}
-
-#hunter:hover {
     cursor: pointer;
 }
 

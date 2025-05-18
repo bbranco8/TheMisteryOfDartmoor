@@ -24,27 +24,18 @@
 #pc {
     bottom: 35%;
     left: 33%;
-}
-
-#pc:hover {
     cursor: pointer;
 }
 
 #lights {
     bottom: 55%;
     left: 5%;
-}
-
-#lights:hover {
     cursor: pointer;
 }
 
 #exit {
     left: 50%;
     bottom: 55%;
-}
-
-#exit:hover {
     cursor: pointer;
 }
 

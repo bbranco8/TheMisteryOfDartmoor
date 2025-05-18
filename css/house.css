@@ -41,26 +41,17 @@ html {
     bottom: 40%;
     left: 40%;
     z-index: 10;
-}
-
-#tv:hover {
     cursor: pointer;
 }
 
 #tv_cabinet {
     bottom: 26%;
     left: 28%;
-}
-
-#tv_cabinet:hover {
     cursor: pointer;
 }
 
 #book {
     bottom: 10%;
     left: 60%;
-}
-
-#book:hover {
     cursor: pointer;
 }

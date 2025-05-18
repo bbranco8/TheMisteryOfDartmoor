@@ -35,15 +35,12 @@
 #dr_frankland {
     bottom: 0;
     left: 10%;
+    cursor: pointer;
 }
 
 #dr_stapland {
     bottom: 0;
     right: 8%;
-}
-
-#dr_frankland:hover,
-#dr_stapland:hover {
     cursor: pointer;
 }
 

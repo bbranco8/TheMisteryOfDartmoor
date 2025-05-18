@@ -62,10 +62,6 @@ header > a {
 #close_clues, #close_image {
     background: none;
     border: none;
-}
-
-#close_clues:hover,
-#close_image:hover {
     cursor: pointer;
 }
 
@@ -75,7 +71,7 @@ header > a {
     height: 100vh;
 }
 
-#clues_container>p {
+#clues_container > p {
     color: #f0d3aa;
     padding: 5%;
 }
@@ -162,9 +158,6 @@ header > a {
 
 .question_images > img {
     display: block;
-}
-
-.question_images > img:hover {
     cursor: pointer;
 }
 
