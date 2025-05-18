@@ -17,8 +17,17 @@ header {
     display: flex;
     z-index: 15;
     width: 95%;
+    padding: 2%;
     justify-content: end;
-    padding: 3%;
+}
+
+.sound {
+    justify-content: space-between;
+}
+
+.sound > div {
+    display: flex;
+    gap: 8%;
 }
 
 a {
@@ -31,7 +40,7 @@ a {
     font-size: 1rem;
 }
 
-header > a {
+header>a {
     color: #E1D0BC;
     font-size: 1.58rem;
     padding-left: 3%;
@@ -46,8 +55,8 @@ header > a {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 1000;
     background-color: #67697b;
 }
@@ -59,7 +68,8 @@ header > a {
     padding: 3%;
 }
 
-#close_clues, #close_image {
+#close_clues,
+#close_image {
     background: none;
     border: none;
     cursor: pointer;
@@ -67,11 +77,11 @@ header > a {
 
 #clues_container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 90%;
 }
 
-#clues_container > p {
+#clues_container>p {
     color: #f0d3aa;
     padding: 5%;
 }
@@ -80,7 +90,7 @@ header > a {
     position: absolute;
 }
 
-.clue > img {
+.clue>img {
     width: 65%;
     height: auto;
 }
@@ -98,7 +108,8 @@ header > a {
 #text_pass,
 #sherlock_pass,
 #text_stapleton,
-#sherlock_stapleton {
+#sherlock_stapleton,
+#text_henry {
     display: none;
     z-index: 15;
 }
@@ -108,7 +119,8 @@ header > a {
 #text_warning,
 #text_pass,
 #text_hound,
-#text_stapleton {
+#text_stapleton,
+#text_henry {
     width: 27%;
     margin: 8% 15%;
     text-align: center;
@@ -117,6 +129,9 @@ header > a {
     border-radius: 20px;
 }
 
+#text_henry {
+    margin: 36% 23%;
+}
 
 #text_hound {
     width: 30%;
@@ -156,7 +171,7 @@ header > a {
     z-index: 1000;
 }
 
-.question_images > img {
+.question_images>img {
     display: block;
     cursor: pointer;
 }
@@ -164,4 +179,4 @@ header > a {
 .disabled {
     opacity: 0.5;
     pointer-events: none;
-  }
+}

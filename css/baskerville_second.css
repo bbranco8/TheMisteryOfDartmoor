@@ -22,8 +22,14 @@
 }
 
 #pc {
-    bottom: 35%;
-    left: 33%;
+    bottom: 31%;
+    left: 32%;
+    cursor: pointer;
+}
+
+#pc_close {
+    left: 30%;
+    top: 20%;
     cursor: pointer;
 }
 

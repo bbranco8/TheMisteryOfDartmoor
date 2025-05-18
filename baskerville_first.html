@@ -12,8 +12,11 @@
 
 <body>
   <header>
-    <a href="map.html"><img src="images/nav/map.png" width="85%" alt="MAP"> </a>
-    <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
+    <img id="play" src="images/nav/no_sound.png" alt="sound">
+    <div>
+      <a href="map.html"><img src="images/nav/map.png" alt="MAP"> </a>
+      <a href="#" id="open_clues"><img src="images/nav/clues.png"  alt="CLUES"></a>
+    </div>
   </header>
 
   <main>
@@ -62,6 +65,8 @@
 
     <!-- exit image -->
     <img id="exit" src="images/baskerville/first/exit.png" height="100%" width="100%" alt="exit">
+
+    <audio id="sound" src="sounds/clock.mov" autoplay loop></audio>
   </main>
 
   <script src="javascript/clues.js"></script>

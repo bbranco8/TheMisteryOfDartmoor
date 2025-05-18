@@ -62,27 +62,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Once image is loaded, randomly position it in the container
         img.onload = () => {
-          let width = clueDiv.offsetWidth;
-          let height = clueDiv.offsetHeight;
-          let maxX = container.offsetWidth - width;
-          let maxY = container.offsetHeight - height;
+          // Append to the container FIRST so we can measure dimensions properly
+          container.appendChild(clueDiv);
+
+          // Use accurate dimensions after image is rendered
+          const width = clueDiv.offsetWidth;
+          const height = clueDiv.offsetHeight;
+
+          // Calculate max positions that keep the clue fully inside the container
+          const maxX = container.clientWidth - width;
+          const maxY = container.clientHeight - height - 20;
+
+          // Prevent negatives just in case
+          const safeX = Math.max(0, maxX);
+          const safeY = Math.max(0, maxY);
+
           let x, y, attempts = 0;
 
-          // Try up to 100 times to find a non-overlapping position
+          // Try random positions until no overlap or max attempts reached
           do {
-            x = Math.floor(Math.random() * maxX);
-            y = Math.floor(Math.random() * maxY);
+            x = Math.floor(Math.random() * safeX);
+            y = Math.floor(Math.random() * safeY);
             attempts++;
           } while (isOverlapping(x, y, width, height) && attempts < 100);
 
-          // Set the final position of the clue
-          clueDiv.style.position = 'absolute';
+          // Set the final position
           clueDiv.style.left = x + 'px';
           clueDiv.style.top = y + 'px';
 
-          // Store this clue’s position for overlap checks
+          // Register this clue's position
           placedClues.push({ x, y, width, height });
         };
+
+
+
       } else {
         // Fallback in case image is missing or fails to load
         clueDiv.innerHTML = '<p>Error</p>';

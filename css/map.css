@@ -16,16 +16,16 @@ main > a > img {
 } 
 
 #baskerville {
-    top: 0;
-    left: 20%;
+    top: 5%;
+    left: 7%;
 }
 
 #house {
-    bottom: 0;
-    left: 50%;
+    top: 10%;
+    right: 0%;
 }
 
 #grimpen {
-    top: 20px; /* Adicionei "px" para evitar erro */
+    bottom: 20px;
     right: 0;
 }

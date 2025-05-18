@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width,
     initial-scale=1">
   <link rel="stylesheet" href="css/geral.css">
-  <link rel="stylesheet" href="css/house_drawer.css">
+  <link rel="stylesheet" href="css/baskerville_second.css">
   <title> TheMisteryOfDartmoor </title>
 </head>
 
 <body>
   <header>
-    <a href="baskerville_second.html"> <img src="images/nav/back.png" width="85%" alt="BACK"> </a>
-    <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
+      <a href="baskerville_second.html"> <img src="images/nav/back.png" width="85%" alt="BACK"> </a>
+      <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
   </header>
 
   <main>
@@ -26,8 +26,9 @@
     </div>
 
     <!-- main page -->
-    <img src="images/baskerville/second/desk_close.png" width="100%" alt="desk">
-    <img src="images/baskerville/second/pc_close.png" width="45%" style="left:30%; top:15%;" alt="pc">
+    <img src="images/baskerville/second/desk_close.png" width="100%" style="bottom:0%;" alt="desk">
+    <img id="pc_close" src="images/baskerville/second/pc_close.png" width="45%" alt="pc"
+        onclick="addClue('pc_close', 'images/baskerville/second/pc_close.png');">
   </main>
   
   <script src="javascript/clues.js"></script>

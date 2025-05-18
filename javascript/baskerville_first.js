@@ -6,23 +6,42 @@ let entry = document.querySelector("#exit");
 let time_left = 5 * 60; // 5 minutes in seconds
 let interval;
 
+let sound = document.querySelector("#sound");
+let play = document.querySelector("#play");
+
+document.addEventListener('DOMContentLoaded', () => {
+  let sound_on = false;
+  play.addEventListener("click", () => {
+    if (sound_on) {
+      sound.pause();
+      play.src = "images/nav/no_sound.png";
+    } else {
+      sound.play();
+      play.src = "images/nav/sound.png";
+    }
+
+    sound_on = !sound_on;
+  });
+});
+
+
 function updateTimer() {
-  let minutes = Math.floor(time_left / 60);
-  let seconds = time_left % 60;
+    let minutes = Math.floor(time_left / 60);
+    let seconds = time_left % 60;
 
-  // Format time as mm:ss
-  if (seconds < 10) {
-    seconds = "0" + seconds;
-  }
+    // Format time as mm:ss
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
 
-  timer.textContent = minutes + ":" + seconds;
+    timer.textContent = minutes + ":" + seconds;
 
-  // If time runs out
-  if (time_left <= 0) {
-    clearInterval(interval);
-    redirect();
-  }
-  time_left--;
+    // If time runs out
+    if (time_left <= 0) {
+        clearInterval(interval);
+        redirect();
+    }
+    time_left--;
 }
 
 // Start the timer
@@ -30,13 +49,16 @@ interval = setInterval(updateTimer, 100);
 
 // Show the entry image and redirect after a few seconds
 function redirect() {
-  // Show entry image
-  entry.style.display = "block";
+    sound.pause();
+    sound.currentTime = 0;
 
-  // Wait a few seconds before redirecting
-  setTimeout(function () {
-    window.location.href = "map.html";
-  }, 5000); // 5000 milliseconds = 5 seconds
+    // Show entry image
+    entry.style.display = "block";
+
+    // Wait a few seconds before redirecting
+    setTimeout(function () {
+        window.location.href = "map.html";
+    }, 5000); // 5000 milliseconds = 5 seconds
 }
 
 
@@ -121,7 +143,7 @@ function show_answer(question_id) {
 
 // --------------------------------------
 // SHERLOCK'S REFLECTION OF DR STAPLETON
-function activate_stapleton() { 
+function activate_stapleton() {
     let text_stapleton = document.querySelector('#text_stapleton');
     let sherlock_stapleton = document.querySelector('#sherlock_stapleton');
 
