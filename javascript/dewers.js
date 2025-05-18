@@ -1,5 +1,28 @@
 sessionStorage.setItem('dewersVisited', 'true');
 
+
+let sound_1 = document.querySelector("#sound_1");
+let sound_2 = document.querySelector("#sound_2");
+let play = document.querySelector("#play");
+
+document.addEventListener('DOMContentLoaded', () => {
+  let sound_on = false;
+  play.addEventListener("click", () => {
+    if (sound_on) {
+      sound_1.pause();
+      sound_2.pause();
+      play.src = "images/nav/no_sound.png";
+    } else {
+      sound_1.play();
+      sound_2.play();
+      play.src = "images/nav/sound.png";
+    }
+
+    sound_on = !sound_on;
+  });
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   let overlay = document.querySelector('#dark_overlay');
 

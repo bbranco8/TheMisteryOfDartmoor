@@ -11,9 +11,12 @@
 </head>
 
 <body>
-  <header>
-    <a href="map.html"><img src="images/nav/map.png" width="85%" alt="MAP"> </a>
-    <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
+  <header class="sound">
+    <img id="play" src="images/nav/no_sound.png" alt="sound">
+    <div>
+      <a href="map.html"><img src="images/nav/map.png" width="85%" alt="MAP"> </a>
+      <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
+    </div>
   </header>
 
   <main>
@@ -46,6 +49,8 @@
         <img id="answer" src="" width="53%" alt="answer">
       </div>
     </section>
+
+    <audio id="sound" src="sounds/town.mp3" loop></audio>
   </main>
 
   <script src="javascript/clues.js"></script>

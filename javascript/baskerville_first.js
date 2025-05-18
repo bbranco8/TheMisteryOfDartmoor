@@ -6,17 +6,25 @@ let entry = document.querySelector("#exit");
 let time_left = 5 * 60; // 5 minutes in seconds
 let interval;
 
-let sound = document.querySelector("#sound");
+let sound_1 = document.querySelector("#sound_1");
+let sound_2 = document.querySelector("#sound_2");
+let sound_3 = document.querySelector("#sound_3");
 let play = document.querySelector("#play");
 
 document.addEventListener('DOMContentLoaded', () => {
   let sound_on = false;
   play.addEventListener("click", () => {
     if (sound_on) {
-      sound.pause();
+      sound_1.pause();
+      sound_2.pause();
+      sound_3.pause();
       play.src = "images/nav/no_sound.png";
     } else {
-      sound.play();
+      sound_1.play();
+      sound_2.play();
+      sound_2.volume = 0.1;
+      sound_3.play();
+      sound_3.volume = 0.2;
       play.src = "images/nav/sound.png";
     }
 

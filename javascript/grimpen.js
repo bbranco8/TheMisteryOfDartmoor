@@ -10,6 +10,25 @@ let question3 = document.querySelector('#question_3');
 
 let selected_question = null; // To track which question was selected
 
+let sound = document.querySelector("#sound");
+let play = document.querySelector("#play");
+
+document.addEventListener('DOMContentLoaded', () => {
+  let sound_on = false;
+  play.addEventListener("click", () => {
+    if (sound_on) {
+      sound.pause();
+      play.src = "images/nav/no_sound.png";
+    } else {
+      sound.play();
+      play.src = "images/nav/sound.png";
+    }
+
+    sound_on = !sound_on;
+  });
+});
+
+
 // Toggle question box and show both questions (after clicking Dr. Frankland)
 hunter.addEventListener('mouseover', (event) => {
     event.stopPropagation();
