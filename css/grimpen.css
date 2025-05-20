@@ -14,3 +14,7 @@
     transform: rotate(10deg);
 }
 
+.question > div > img:hover {
+    transform: scale(0.9); 
+}
+

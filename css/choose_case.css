@@ -24,5 +24,14 @@ section > p {
 
 section > a {
     display: block;
-    margin: 2%;
+    margin: 2% auto; 
+    width: 75%;
+}
+
+section > a:hover {
+    transform: scale(0.9); 
+}
+
+section > a:hover {
+    width: 105%;
 }

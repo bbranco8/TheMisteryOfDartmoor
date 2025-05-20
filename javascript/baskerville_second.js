@@ -41,6 +41,21 @@ document.addEventListener('DOMContentLoaded', function () {
         if (light_on) {
             document.querySelector('#text_lights').style.display = 'none';
             document.querySelector('#sherlock_lights').style.display = 'none';
+
+            setTimeout(() => {
+                document.querySelector('#text_drug').style.display = 'block';
+                document.querySelector('#sherlock_drug').style.display = 'block';
+
+                // Aguarda mais 3 segundos para esconder novamente
+                setTimeout(() => {
+                    document.querySelector('#text_drug').style.display = 'none';
+                    document.querySelector('#sherlock_drug').style.display = 'none';
+                }, 3500); // tempo visível
+            }, 1500); // tempo até aparecer
+        } else {
+            // Esconde se as luzes forem desligadas
+            document.querySelector('#text_drug').style.display = 'none';
+            document.querySelector('#sherlock_drug').style.display = 'none';
         }
     });
 
@@ -58,10 +73,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             sound_2.volume = 0.5;
             play.src = "images/nav/sound.png";
+            play.classList.remove("pulse"); // REMOVE animação
         } else {
             sound_1.pause();
             sound_2.pause();
             play.src = "images/nav/no_sound.png";
+            play.classList.add("pulse"); // ADICIONA animação
         }
     });
 
@@ -180,6 +197,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let map = document.querySelector('#map');
 
     map.addEventListener('click', function (e) {
+        deactivate_out();
+        
         if (!(light_on && exit_clicked && pc_accessed)) {
             e.preventDefault();
         }

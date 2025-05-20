@@ -70,3 +70,7 @@
     z-index: 9999;
     display: none;
 }
+
+.question > div > img:hover {
+    transform: scale(0.9); 
+}

@@ -12,10 +12,10 @@
 
 <body>
   <header class="sound">
-    <img id="play" src="images/nav/no_sound_1.png" alt="sound">
+    <img id="play" class="pulse" src="images/nav/no_sound_1.png" alt="sound">
     <div>
       <a href="map.html"><img src="images/nav/map.png" alt="MAP"> </a>
-      <a href="#" id="open_clues"><img src="images/nav/clues.png"  alt="CLUES"></a>
+      <a href="#" id="open_clues"><img src="images/nav/clues.png" alt="CLUES"></a>
     </div>
   </header>
 
@@ -44,8 +44,8 @@
     <img id="mirror" src="images/house/mirror.png" width="8%" alt="mirror">
     <img id="cabinet" src="images/house/cabinet.png" width="15%" alt="cabinet">
     <img id="tv" src="images/house/tv_off.png" width="20%" alt="tv" onmouseover="this.src='images/house/tv_off_mov.png'"
-      onmouseout="this.src='images/house/tv_off.png'"
-      onclick="this.src='images/house/tv_on.png', addClue('tv', 'images/house/tv_on.png');">
+      onmouseout="this.src='images/house/tv_off.png', deactivate_tv()"
+      onclick="this.src='images/house/tv_on.png', addClue('tv', 'images/house/tv_on.png'), activate_tv();">
     <img id="tv_cabinet" src="images/house/tv_cabinet.png" width="40%" alt="cabinet"
       onmouseover="this.src='images/house/tv_cabinet_mov.png'" onmouseout="this.src='images/house/tv_cabinet.png'"
       onclick="window.location.href='house_drawer.html'">
@@ -53,7 +53,11 @@
       onmouseout="this.src='images/house/book.png'"
       onclick="window.location.href='house_book.html', addClue('book', 'images/house/book.png');">
 
-      <audio id="sound_1" src="sounds/tv_static.mp3" loop></audio>
+    <!-- sherlock's reflection -->
+    <img id="text_tv" src="images/house/text_tv.png" width="20%" alt="text">
+    <img id="sherlock_tv" src="images/sherlock_1.png" width="12%" alt="sherlock">
+
+    <audio id="sound_1" src="sounds/tv_static.mp3" loop></audio>
   </main>
 
   <script src="javascript/clues.js"></script>

@@ -147,7 +147,11 @@ main>img {
 #text_out,
 #sherlock_out,
 #text_lights,
-#sherlock_lights {
+#sherlock_lights,
+#text_drug,
+#sherlock_drug,
+#text_tv,
+#sherlock_tv {
     display: none;
     z-index: 15;
 }
@@ -159,13 +163,14 @@ main>img {
 #text_hound,
 #text_stapleton,
 #text_henry,
-#text_pc {
+#text_pc,
+#text_drug {
     width: 27%;
     margin: 8% 15%;
 }
 
 #text_out {
-    margin: 16% 13%;
+    margin: 10% 13%;
 }
 
 #text_henry {
@@ -173,7 +178,7 @@ main>img {
 }
 
 #text_lights {
-    margin: 17% 67%;
+    margin: 10% 67%;
 }
 
 #text_hound {
@@ -188,12 +193,18 @@ main>img {
     margin: 16% 65%;
 }
 
+#text_tv {
+    margin: 18% 11%;
+}
+
 #sherlock_word,
 #sherlock_photo,
 #sherlock_hound,
 #sherlock_pass,
 #sherlock_pc,
-#sherlock_out {
+#sherlock_out,
+#sherlock_drug,
+#sherlock_tv {
     bottom: -5%;
     left: 0;
 }
@@ -225,4 +236,18 @@ main>img {
 .disabled {
     opacity: 0.5;
     pointer-events: none;
+}
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
 }

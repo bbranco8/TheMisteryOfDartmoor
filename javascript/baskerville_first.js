@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sound_2.pause();
       sound_3.pause();
       play.src = "images/nav/no_sound.png";
+      play.classList.remove("pulse"); // REMOVE animação
     } else {
       sound_1.play();
       sound_2.play();
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sound_3.play();
       sound_3.volume = 0.2;
       play.src = "images/nav/sound.png";
+      play.classList.add("pulse"); // ADICIONA animação
     }
 
     sound_on = !sound_on;

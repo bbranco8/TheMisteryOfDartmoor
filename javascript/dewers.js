@@ -12,10 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
       sound_1.pause();
       sound_2.pause();
       play.src = "images/nav/no_sound.png";
+      play.classList.remove("pulse"); // REMOVE animação
     } else {
       sound_1.play();
       sound_2.play();
       play.src = "images/nav/sound.png";
+      play.classList.add("pulse"); // ADICIONA animação
     }
 
     sound_on = !sound_on;
@@ -52,7 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
       sherlock_hound.style.display = 'block';
 
       dog_disappeared = true;
-    }, 1000);
+
+      // Reaparece após 7 segundos 
+      setTimeout(() => {
+        dog.style.opacity = '1';
+        dog.style.pointerEvents = 'auto';
+        dog_disappeared = false;
+
+        text_hound.style.display = 'none';
+        sherlock_hound.style.display = 'none';
+      }, 7000);
+
+    }, 1500);
   });
 
   dog_box.addEventListener('mouseleave', () => {
