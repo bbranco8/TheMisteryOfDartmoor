@@ -33,9 +33,10 @@
     cursor: pointer;
 }
 
-#play {
+#play_pc {
     right: 23%;
     top: 25%;
+    cursor: pointer;
 }
 
 #lights {
@@ -50,11 +51,15 @@
     cursor: pointer;
 }
 
-#image_overlay {
+#image_exit_overlay {
 background-color: white;
 }
 
-#image_container {
+#image_pc_container > img {
+    position: absolute;
+}
+
+#image_exit_container {
     display: flex;
     align-items: center;
     justify-content: center;

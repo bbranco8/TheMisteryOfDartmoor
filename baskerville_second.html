@@ -21,12 +21,20 @@
 
     <main>
         <!-- show clues -->
-        <div id="clues_overlay" class="overlay hidden">
-            <div class="overlay_header">
-                <button id="close_clues"><img src="images/nav/exit.png" width="85%" alt="X"></button>
-            </div>
-            <div id="clues_container"></div>
+    <div id="clues_overlay" class="overlay hidden">
+      <div class="overlay_header">
+        <button id="close_clues"><img src="images/nav/exit.png" width="85%" alt="X"></button>
+      </div>
+      <div id="clues_container"></div>
+      <div id="culprit_guess" class="guess_area">
+        <p>Who killed Henry's father?</p>
+        <div>
+          <input type="text" id="culprit_input">
+          <button id="submit_culprit">Submit</button>
         </div>
+        <p id="culprit_result"></p>
+      </div>
+    </div>
 
         <!-- main page -->
         <img id="background" src="images/baskerville/first/background.png" width="100%" alt="background">
@@ -35,16 +43,27 @@
         <img id="desks" src="images/baskerville/second/desk.png" width="45%" alt="desks">
         <img id="curtains" src="images/baskerville/second/curtains_0.png" width="40%" alt="cage">
         <img id="pc" src="images/baskerville/second/pc.png" width="10%" alt="pc"
-        onclick="addClue('pc', 'images/baskerville/second/pc_close.png'), window.location.href='baskerville_computer.html';">
+            onclick="addClue('pc', 'images/baskerville/second/pc_close.png')">
         <img id="lights" src="images/baskerville/second/lights_off.png" width="2%" alt="lights">
         <img id="exit" src="images/baskerville/second/exit.png" width="2%" alt="exit">
 
-        <div id="image_overlay" class="overlay hidden">
+        <div id="image_exit_overlay" class="overlay hidden">
             <div class="overlay_header">
-                <button id="close_image"><img src="images/nav/exit.png" width="85%" alt="X"></button>
+                <button id="close_image_exit"><img src="images/nav/exit.png" width="85%" alt="X"></button>
             </div>
-            <div id="image_container">
+            <div id="image_exit_container">
                 <img src="images/baskerville/second/exit.png" alt="exit" id="fullscreen_image">
+            </div>
+        </div>
+
+        <div id="image_pc_overlay" class="overlay hidden">
+            <div class="overlay_header">
+                <button id="close_image_pc"><img src="images/nav/exit.png" width="85%" alt="X"></button>
+            </div>
+            <div id="image_pc_container">
+                <img src="images/baskerville/second/desk_close.png" width="100%" style="bottom:0%;" alt="desk">
+                <img id="doc" src="images/baskerville/second/doc_1.png" width="45%" alt="pc">
+                <img id="play_pc" src="images/index/play.png" width="3%" alt="tv">
             </div>
         </div>
 
@@ -63,6 +82,9 @@
         <audio id="sound_2" src="sounds/growling.mp3" loop></audio>
     </main>
 
+    <script>
+        localStorage.setItem('pc_accessed', 'true');
+    </script>
     <script src="javascript/clues.js"></script>
     <script src="javascript/add_clues.js"></script>
     <script src="javascript/baskerville_second.js"></script>

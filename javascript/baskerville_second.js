@@ -83,18 +83,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ABRIR IMAGEM DE EXIT
-    let image = document.querySelector('#exit');
-    let imageOverlay = document.querySelector('#image_overlay');
-    let closeImage = document.querySelector('#close_image');
+    let image_exit = document.querySelector('#exit');
+    let image_exit_overlay = document.querySelector('#image_exit_overlay');
+    let close_exit_image = document.querySelector('#close_image_exit');
 
-    if (image && imageOverlay && closeImage) {
-        image.addEventListener('click', function () {
-            imageOverlay.classList.remove('hidden');
+    if (image_exit && image_exit_overlay && close_exit_image) {
+        image_exit.addEventListener('click', function () {
+            image_exit_overlay.classList.remove('hidden');
             exit_clicked = true;
         });
 
-        closeImage.addEventListener('click', function () {
-            imageOverlay.classList.add('hidden');
+        close_exit_image.addEventListener('click', function () {
+            image_exit_overlay.classList.add('hidden');
 
             if (!light_on) {
                 setTimeout(() => {
@@ -102,6 +102,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('#sherlock_lights').style.display = 'block';
                 }, 2500);
             }
+        });
+    }
+
+    // ABRIR IMAGEM DE COMPUTADOR
+    let image_pc = document.querySelector('#pc');
+    let image_pc_overlay = document.querySelector('#image_pc_overlay');
+    let close_pc_image = document.querySelector('#close_image_pc');
+
+    if (image_pc && image_pc_overlay && close_pc_image) {
+        image_pc.addEventListener('click', function () {
+            image_pc_overlay.classList.remove('hidden');
+            exit_clicked = true;
+        });
+
+        close_pc_image.addEventListener('click', function () {
+            image_pc_overlay.classList.add('hidden');
         });
     }
 
@@ -192,3 +208,17 @@ window.addEventListener('load', () => {
 });
 
 document.querySelector('#exit').addEventListener('click', deactivate_out);
+
+
+// ANIMAÇÃO COMPUTADOR
+const imagens = [
+    "images/baskerville/second/doc_1.png",
+    "images/baskerville/second/doc_2.png",
+    "images/baskerville/second/doc_3.png"
+];
+let indice_atual = 0;
+
+document.querySelector("#play_pc").addEventListener("click", function () {
+    indice_atual = (indice_atual + 1) % imagens.length; // incrementa e volta ao início quando passar do último
+    document.getElementById("doc").src = imagens[indice_atual];
+});

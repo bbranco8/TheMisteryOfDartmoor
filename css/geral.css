@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
 }
 
-.sound > div {
+.sound>div {
     display: flex;
     gap: 8%;
 }
@@ -34,9 +34,10 @@ a {
 p,
 a {
     font-size: 1.4rem;
+    color: #f0d3aa;
 }
 
-main > img {
+main>img {
     position: absolute;
 }
 
@@ -63,10 +64,12 @@ main > img {
 }
 
 #close_clues,
-#close_image {
+#close_image_exit,
+#close_image_pc {
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 30;
 }
 
 #clues_container {
@@ -89,20 +92,74 @@ main > img {
     height: auto;
 }
 
+.guess_area {
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+
+.guess_area > div {
+    display: flex; 
+    flex-direction: row;
+}
+
+.guess_area > div > input {
+    padding: 3% 5%;
+    background: #f0d3aa;
+    color: #925c10;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 70%;
+    margin-right: 5%;
+    font-size: 1rem;
+}
+
+.guess_area > div > button {
+    padding: 3% 5%;
+    background: #f0d3aa;
+    color: #925c10;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#culprit_result {
+    font-size: 1rem;
+}
 
 /* Sherlock's interventions */
-#text_word, #sherlock_word, #text_photo, #sherlock_photo,
-#text_warning, #sherlock_warning, #text_hound, #sherlock_hound,
-#text_pass, #sherlock_pass, #text_stapleton, #sherlock_stapleton,
-#text_henry, #text_pc, #sherlock_pc, #text_out, #sherlock_out,
-#text_lights, #sherlock_lights {
+#text_word,
+#sherlock_word,
+#text_photo,
+#sherlock_photo,
+#text_warning,
+#sherlock_warning,
+#text_hound,
+#sherlock_hound,
+#text_pass,
+#sherlock_pass,
+#text_stapleton,
+#sherlock_stapleton,
+#text_henry,
+#text_pc,
+#sherlock_pc,
+#text_out,
+#sherlock_out,
+#text_lights,
+#sherlock_lights {
     display: none;
     z-index: 15;
 }
 
-#text_word, #text_photo, #text_warning,
-#text_pass, #text_hound, #text_stapleton,
-#text_henry, #text_pc {
+#text_word,
+#text_photo,
+#text_warning,
+#text_pass,
+#text_hound,
+#text_stapleton,
+#text_henry,
+#text_pc {
     width: 27%;
     margin: 8% 15%;
 }
@@ -141,7 +198,8 @@ main > img {
     left: 0;
 }
 
-#sherlock_warning, #sherlock_lights {
+#sherlock_warning,
+#sherlock_lights {
     bottom: -5%;
     right: 5%;
 }
