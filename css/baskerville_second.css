@@ -22,15 +22,20 @@
 }
 
 #pc {
-    bottom: 31%;
+    bottom: 35%;
     left: 32%;
     cursor: pointer;
 }
 
-#pc_close {
-    left: 30%;
+#doc {
+    left: 35%;
     top: 20%;
     cursor: pointer;
+}
+
+#play {
+    right: 23%;
+    top: 25%;
 }
 
 #lights {
@@ -45,7 +50,7 @@
     cursor: pointer;
 }
 
-.overlay {
+#image_overlay {
 background-color: white;
 }
 
@@ -69,6 +74,6 @@ background-color: white;
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    background: radial-gradient(circle 240px at var(--x, 50%) var(--y, 50%), transparent 0%, rgba(0, 0, 0, 0.95) 100%);
+    background: radial-gradient(circle 240px at var(--x, 50%) var(--y, 50%), transparent 0%, rgba(57, 10, 10, 0.95) 100%);
     z-index: 10;
 }

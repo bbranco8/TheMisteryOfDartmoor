@@ -14,7 +14,7 @@
     <header class="sound">
         <img id="play" src="images/nav/no_sound.png" alt="sound">
         <div>
-            <a href="#"><img src="images/nav/map.png" width="85%" alt="MAP"> </a>
+            <a id="map" href="map.html"><img src="images/nav/map.png" width="85%" alt="MAP"> </a>
             <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
         </div>
     </header>
@@ -35,7 +35,7 @@
         <img id="desks" src="images/baskerville/second/desk.png" width="45%" alt="desks">
         <img id="curtains" src="images/baskerville/second/curtains_0.png" width="40%" alt="cage">
         <img id="pc" src="images/baskerville/second/pc.png" width="10%" alt="pc"
-        onclick="window.location.href='baskerville_computer.html';">
+        onclick="addClue('pc', 'images/baskerville/second/pc_close.png'), window.location.href='baskerville_computer.html';">
         <img id="lights" src="images/baskerville/second/lights_off.png" width="2%" alt="lights">
         <img id="exit" src="images/baskerville/second/exit.png" width="2%" alt="exit">
 
@@ -49,6 +49,18 @@
         </div>
 
         <div id="dark_overlay"></div>
+
+        <!-- sherlock's reflection -->
+        <img id="text_out" src="images/baskerville/second/text_out.png" width="13%" alt="text">
+        <img id="sherlock_out" src="images/sherlock_1.png" width="15%" alt="sherlock">
+
+        <img id="text_lights" src="images/baskerville/second/text_lights.png" width="13%" alt="text">
+        <img id="sherlock_lights" src="images/sherlock_2.png" width="17%" alt="sherlock">
+
+
+        <!-- sound -->
+        <audio id="sound_1" src="sounds/lab.mp3" loop></audio>
+        <audio id="sound_2" src="sounds/growling.mp3" loop></audio>
     </main>
 
     <script src="javascript/clues.js"></script>

@@ -27,11 +27,16 @@
 
     <!-- main page -->
     <img src="images/baskerville/second/desk_close.png" width="100%" style="bottom:0%;" alt="desk">
-    <img id="pc_close" src="images/baskerville/second/pc_close.png" width="45%" alt="pc"
-        onclick="addClue('pc_close', 'images/baskerville/second/pc_close.png');">
+    <img id="doc" src="images/baskerville/second/doc_1.png" width="45%" alt="pc">
+    <img id="play" src="images/index/play.png" width="3%" alt="tv">    
+
+    <audio id="sound" src="sounds/lab.mp3" loop></audio>
   </main>
-  
+
+  <script>
+    localStorage.setItem('pc_accessed', 'true');
+  </script>
   <script src="javascript/clues.js"></script>
   <script src="javascript/add_clues.js"></script>
-  <script src="javascript/house_drawer.js"></script>
+  <script src="javascript/baskerville_pc.js"></script>
 </body>

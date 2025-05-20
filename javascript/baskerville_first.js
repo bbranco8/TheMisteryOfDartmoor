@@ -57,8 +57,9 @@ interval = setInterval(updateTimer, 100);
 
 // Show the entry image and redirect after a few seconds
 function redirect() {
-    sound.pause();
-    sound.currentTime = 0;
+    sound_1.pause();
+    sound_2.pause();
+    sound_3.pause();
 
     // Show entry image
     entry.style.display = "block";

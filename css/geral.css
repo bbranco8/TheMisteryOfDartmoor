@@ -2,10 +2,6 @@ body {
     font-family: Arial, sans-serif
 }
 
-main>img {
-    position: absolute;
-}
-
 html,
 body {
     overflow: hidden;
@@ -37,13 +33,11 @@ a {
 
 p,
 a {
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
-header>a {
-    color: #E1D0BC;
-    font-size: 1.58rem;
-    padding-left: 3%;
+main > img {
+    position: absolute;
 }
 
 .hidden {
@@ -97,40 +91,32 @@ header>a {
 
 
 /* Sherlock's interventions */
-#text_word,
-#sherlock_word,
-#text_photo,
-#sherlock_photo,
-#text_warning,
-#sherlock_warning,
-#text_hound,
-#sherlock_hound,
-#text_pass,
-#sherlock_pass,
-#text_stapleton,
-#sherlock_stapleton,
-#text_henry {
+#text_word, #sherlock_word, #text_photo, #sherlock_photo,
+#text_warning, #sherlock_warning, #text_hound, #sherlock_hound,
+#text_pass, #sherlock_pass, #text_stapleton, #sherlock_stapleton,
+#text_henry, #text_pc, #sherlock_pc, #text_out, #sherlock_out,
+#text_lights, #sherlock_lights {
     display: none;
     z-index: 15;
 }
 
-#text_word,
-#text_photo,
-#text_warning,
-#text_pass,
-#text_hound,
-#text_stapleton,
-#text_henry {
+#text_word, #text_photo, #text_warning,
+#text_pass, #text_hound, #text_stapleton,
+#text_henry, #text_pc {
     width: 27%;
     margin: 8% 15%;
-    text-align: center;
-    position: absolute;
-    padding: 0.5%;
-    border-radius: 20px;
+}
+
+#text_out {
+    margin: 16% 13%;
 }
 
 #text_henry {
     margin: 36% 23%;
+}
+
+#text_lights {
+    margin: 17% 67%;
 }
 
 #text_hound {
@@ -138,7 +124,7 @@ header>a {
 }
 
 #text_warning {
-    margin: 15% 55%;
+    margin: 10% 55%;
 }
 
 #text_stapleton {
@@ -148,12 +134,14 @@ header>a {
 #sherlock_word,
 #sherlock_photo,
 #sherlock_hound,
-#sherlock_pass {
+#sherlock_pass,
+#sherlock_pc,
+#sherlock_out {
     bottom: -5%;
     left: 0;
 }
 
-#sherlock_warning {
+#sherlock_warning, #sherlock_lights {
     bottom: -5%;
     right: 5%;
 }
