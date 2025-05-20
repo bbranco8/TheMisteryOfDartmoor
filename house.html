@@ -11,9 +11,12 @@
 </head>
 
 <body>
-  <header>
-    <a href="map.html"><img src="images/nav/map.png" width="85%" alt="MAP"> </a>
-    <a href="#" id="open_clues"><img src="images/nav/clues.png" width="85%" alt="CLUES"></a>
+  <header class="sound">
+    <img id="play" src="images/nav/no_sound_1.png" alt="sound">
+    <div>
+      <a href="map.html"><img src="images/nav/map.png" alt="MAP"> </a>
+      <a href="#" id="open_clues"><img src="images/nav/clues.png"  alt="CLUES"></a>
+    </div>
   </header>
 
   <main>
@@ -49,8 +52,11 @@
     <img id="book" src="images/house/book.png" width="20%" alt="book" onmouseover="this.src='images/house/book_mov.png'"
       onmouseout="this.src='images/house/book.png'"
       onclick="window.location.href='house_book.html', addClue('book', 'images/house/book.png');">
+
+      <audio id="sound_1" src="sounds/tv_static.mp3" loop></audio>
   </main>
 
   <script src="javascript/clues.js"></script>
   <script src="javascript/add_clues.js"></script>
+  <script src="javascript/house.js"></script>
 </body>
