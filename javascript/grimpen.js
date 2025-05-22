@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let sound_on = false;
   play.addEventListener("click", () => {
     if (sound_on) {
-      sound.pause();
-      play.src = "images/nav/no_sound.png";
-      play.classList.remove("pulse"); // REMOVE animação
-    } else {
       sound.play();
       play.src = "images/nav/sound.png";
+      play.classList.remove("pulse"); // REMOVE animação
+    } else {
+      sound.pause();
+      play.src = "images/nav/no_sound.png";
       play.classList.add("pulse"); // ADICIONA animação
     }
 
