@@ -20,6 +20,7 @@
     <img id="play" class="pulse" src="images/nav/no_sound_1.png" alt="sound">
     <a id="map" href="map.html"><img src="images/nav/map.png" width="80%" alt="MAP"> </a>
     <a id="clues" href="#"><img src="images/nav/clues.png" width="80%" alt="CLUES"></a>
+    <a id="answer" href="#"><img src="images/nav/final_answer.png" width="100%" alt="ANSWER"></a>
   </header>
 
   <main>
@@ -29,6 +30,13 @@
         <button id="close_clues"><img src="images/nav/close.png" width="85%" alt="X"></button>
       </div>
       <div id="clues_container"></div>
+    </div>
+
+    <!-- final answer -->
+    <div id="answer_overlay" class="overlay hidden">
+      <div class="overlay_header">
+        <button id="close_answer"><img src="images/nav/close.png" width="85%" alt="X"></button>
+      </div>
       <div id="culprit_guess" class="guess_area">
         <p>Who killed Henry's father?</p>
         <div>
@@ -63,6 +71,7 @@
   </main>
 
   <script src="javascript/clues.js"></script>
+  <script src="javascript/final_answer.js"></script>
   <script src="javascript/add_clues.js"></script>
   <script src="javascript/dewers.js"></script>
   <script>

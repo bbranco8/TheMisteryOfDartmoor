@@ -20,7 +20,7 @@ header > img {
     left: 2%;
 }
 
-#next {
+#next, #answer, #close {
     top: 4%;
     right: 2%;
 }
@@ -68,6 +68,7 @@ main>img {
 }
 
 #close_clues,
+#close_answer,
 #close_image_exit,
 #close_image_pc {
     background: none;

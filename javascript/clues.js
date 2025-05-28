@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const open = document.querySelector('#clues');
   const close = document.querySelector('#close_clues');
   const overlay = document.querySelector('#clues_overlay');
-  const submitBtn = document.querySelector('#submit_culprit');
 
   // Abrir/fechar overlay
   if (open && close && overlay) {
@@ -21,25 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!sessionStorage.getItem('sessionStarted')) {
     localStorage.removeItem('clues');
     sessionStorage.setItem('sessionStarted', 'true');
-  }
-
-  // Submissão do culpado
-  if (submitBtn) {
-    submitBtn.addEventListener('click', function () {
-      const input = document.querySelector('#culprit_input').value.trim();
-      const result = document.querySelector('#culprit_result');
-      const culpadosCorretos = ['Dr. Frankland', 'Frankland', 'Dr Frankland'];
-
-      if (input) {
-        const inputNormalizado = input.toLowerCase();
-        const acertou = culpadosCorretos.some(nome => nome.toLowerCase() === inputNormalizado);
-
-        result.textContent = acertou
-          ? 'Correct! You found the culprit.'
-          : 'Wrong! Try again';
-        result.style.color = '#f0d3aa';
-      }
-    });
   }
 
   // Função para exibir as pistas
