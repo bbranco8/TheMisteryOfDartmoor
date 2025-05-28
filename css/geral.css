@@ -207,20 +207,13 @@ main>img {
     align-items: center;
     z-index: 9999;
 }
-
-#screen_message > img:first-child {
-    position: absolute;
-    top: 28%;
-    left: 15%;
-}
   
-#screen_message > img:nth-child(2) {
+#screen_message > img {
     position: absolute;
     bottom: 5%;
     left: 0;
 }
 
-/* Esconde a mensagem inicialmente */
 .invisible {
     visibility: hidden;
 }
