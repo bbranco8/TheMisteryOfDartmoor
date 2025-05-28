@@ -81,12 +81,10 @@ background-color: white;
 }
 
 /* sherlock's intervention */
+#text_out, 
 #text_drug {
-    margin: 8% 15%;
-}
-
-#text_out {
-    margin: 10% 13%;
+    top: 28%;
+    left: 13%;
 }
 
 #sherlock_out,
@@ -96,7 +94,8 @@ background-color: white;
 }
 
 #text_lights {
-    margin: 10% 67%;
+    top: 28%;
+    right: 18%;
 }
 
 #sherlock_lights {
@@ -116,12 +115,23 @@ background-color: white;
     }
 }
 
+@media (max-width: 1600px) {
+    #text_out, #text_drug, #text_lights {
+        top: 30%;
+    }
+}
+
 @media (max-width: 1580px) { 
     #pc {
         bottom: 33%;
     }
 }
 
+@media (max-width: 1540px) {
+    #text_out, #text_drug, #text_lights {
+        top: 34%;
+    }
+}
 
 @media (max-width: 1500px) { 
     #pc {
@@ -137,6 +147,12 @@ background-color: white;
     }
 }
 
+@media (max-width: 1480px) { 
+    #text_out, #text_drug, #text_lights {
+        top: 38%;
+    }
+}
+
 @media (max-width: 1400px) { 
     #pc {
         bottom: 28%;
@@ -148,6 +164,12 @@ background-color: white;
 
     #play_pc {
         top: 31%;
+    }
+}
+
+@media (max-width: 1380px) { 
+    #text_out, #text_drug, #text_lights {
+        top: 44%;
     }
 }
 
@@ -174,5 +196,9 @@ background-color: white;
 
     #play_pc {
         top: 38%;
+    }
+
+    #text_out, #text_drug, #text_lights {
+        top: 48%;
     }
 }
