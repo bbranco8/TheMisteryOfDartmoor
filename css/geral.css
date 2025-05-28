@@ -65,6 +65,7 @@ main>img {
     width: 95%;
     justify-content: end;
     padding: 3%;
+    position: absolute;
 }
 
 #close_clues,
@@ -78,12 +79,13 @@ main>img {
 }
 
 #clues_container {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 90%;
+    top: 10%;
 }
 
-#clues_container>p {
+#clues_container > p {
     color: #f0d3aa;
     padding: 5%;
 }
@@ -92,45 +94,57 @@ main>img {
     position: absolute;
 }
 
-.clue>img {
-    width: 65%;
+.clue > img {
+    width: 50%;
     height: auto;
 }
 
+/* final answer */
 .guess_area {
     position: absolute;
     left: 5%;
-    top: 40%;
+    top: 30%;
 }
 
-.guess_area>div {
+.guess_area > div {
     display: flex;
     flex-direction: row;
+    width: 280%;
 }
 
-.guess_area>div>input {
+.guess_area > div > input {
     padding: 3% 5%;
-    background: #f0d3aa;
-    color: #925c10;
+    background-image: url('../images/nav/answer_input.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: #3f4154;
+    font-size: 1.4rem;
     border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 70%;
     margin-right: 5%;
-    font-size: 1rem;
+    outline: none;
 }
 
-.guess_area>div>button {
+.guess_area > div > button {
     padding: 3% 5%;
-    background: #f0d3aa;
-    color: #925c10;
+    background-image: url('../images/nav/submit.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: #3f4154;
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    font-size: 1.4rem;
 }
 
 #culprit_result {
-    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 40%;
 }
 
 /* Sherlock's interventions */

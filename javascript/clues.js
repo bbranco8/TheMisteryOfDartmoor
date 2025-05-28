@@ -72,37 +72,38 @@ document.addEventListener('DOMContentLoaded', function () {
       clueDiv.className = 'clue';
 
       if (clue.imgSrc) {
-        const img = document.createElement('img');
+        const img = new Image();
         img.src = clue.imgSrc;
-        clueDiv.appendChild(img);
 
         img.onload = () => {
+          const clueDiv = document.createElement('div');
+          clueDiv.className = 'clue';
+          clueDiv.appendChild(img);
+          clueDiv.style.position = 'absolute';
+          clueDiv.style.visibility = 'hidden'; // Oculto para medir
+
           container.appendChild(clueDiv);
+
           const width = clueDiv.offsetWidth;
           const height = clueDiv.offsetHeight;
 
           const maxX = container.clientWidth - width;
           const maxY = container.clientHeight - height;
 
-          const safeX = Math.max(0, maxX);
-          const safeY = Math.max(0, maxY);
           let x, y, attempts = 0;
 
           do {
-            x = Math.floor(Math.random() * safeX);
-            y = Math.floor(Math.random() * safeY);
+            x = Math.floor(Math.random() * Math.max(0, maxX));
+            y = Math.floor(Math.random() * Math.max(0, maxY));
             attempts++;
           } while (isOverlapping(x, y, width, height) && attempts < 100);
 
-          clueDiv.style.position = 'absolute';
           clueDiv.style.left = x + 'px';
           clueDiv.style.top = y + 'px';
+          clueDiv.style.visibility = 'visible';
 
           placedClues.push({ x, y, width, height });
         };
-      } else {
-        clueDiv.innerHTML = '<p>Error</p>';
-        container.appendChild(clueDiv);
       }
     });
   };

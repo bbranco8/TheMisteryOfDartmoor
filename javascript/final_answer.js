@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 const inputNormalizado = input.toLowerCase();
                 const acertou = culpadosCorretos.some(nome => nome.toLowerCase() === inputNormalizado);
 
-                result.textContent = acertou
-                    ? 'Correct! You found the culprit.'
-                    : 'Wrong! Try again';
-                result.style.color = '#f0d3aa';
+                if (result) {
+                    result.src = acertou ? 'images/nav/right_answer.png' : 'images/nav/wrong_answer.png';
+                    result.classList.remove('hidden');
+                }
             }
         });
     }
