@@ -38,7 +38,7 @@ html {
 }
 
 #tv {
-    bottom: 40%;
+    bottom: 43%;
     left: 40%;
     z-index: 10;
     cursor: pointer;
@@ -55,3 +55,33 @@ html {
     left: 60%;
     cursor: pointer;
 }
+
+@media (max-width: 1680px) { 
+    #tv {
+        bottom: 41%;
+    }
+}
+
+@media (max-width: 1580px) { 
+    #play_tv {
+        top: 25%;
+    }
+}
+
+@media (max-width: 1480px) { 
+    #play_tv {
+        top: 30%;
+    }
+} 
+
+@media (max-width: 1380px) { 
+    #play_tv {
+        top: 35%;
+    }
+} 
+
+@media (max-width: 1280px) { 
+    #play_tv {
+        top: 40%;
+    }
+} 
