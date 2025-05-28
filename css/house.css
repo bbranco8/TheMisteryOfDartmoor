@@ -56,32 +56,24 @@ html {
     cursor: pointer;
 }
 
-@media (max-width: 1680px) { 
+@media (max-width: 1600px) { 
     #tv {
         bottom: 41%;
     }
 }
+ 
+@media (max-width: 1470px) { 
+    #tv {
+        bottom: 39%;
+    }
 
-@media (max-width: 1580px) { 
-    #play_tv {
-        top: 25%;
+    #book {
+        bottom: 8%;
     }
 }
 
-@media (max-width: 1480px) { 
-    #play_tv {
-        top: 30%;
-    }
-} 
-
-@media (max-width: 1380px) { 
-    #play_tv {
-        top: 35%;
-    }
-} 
-
 @media (max-width: 1280px) { 
-    #play_tv {
-        top: 40%;
+    #tv {
+        bottom: 38%;
     }
-} 
+}
