@@ -6,12 +6,12 @@
 
 #word {
     top: 40%;
-    left: 26%;
+    left: 28%;
 }
 
 #word_2 {
-    top: 70%;
-    left: 51%;
+    bottom: 15%;
+    right: 34%;
 }
 
 #word:hover,
@@ -20,3 +20,47 @@
     transform: rotate(2deg);
 }
 
+/* sherlock's interventions */
+#text_word {
+    top: 26%;
+    left: 12%;
+}
+
+#sherlock_word {
+    bottom: -5%;
+    left: 0;
+}
+
+
+/* responsive */
+@media (max-width: 1600px) {
+    #text_word {
+        top: 30%;
+    }
+}
+
+@media (max-width: 1480px) { 
+    #word_2 {
+        bottom: 20%;
+    }
+
+    #text_word {
+        top: 35%;
+    }
+}
+
+@media (max-width: 1380px) { 
+    #word_2 {
+        bottom: 25%;
+    }
+
+    #text_word {
+        top: 40%;
+    }
+}
+
+@media (max-width: 1280px) { 
+    #text_word {
+        top: 45%;
+    }
+}

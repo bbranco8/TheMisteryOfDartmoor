@@ -71,6 +71,64 @@
     display: none;
 }
 
+/* dr frankland questions */
 .question > div > img:hover {
-    transform: scale(0.9); 
+    transform: scale(1.1); 
+}
+
+/* sherlock's intervention */
+#text_stapleton {
+    bottom: 48%;
+    right: 23%;
+}
+
+#sherlock_stapleton {
+    bottom: -5%;
+    right: 45%;
+}
+
+
+/* responsive */
+@media (max-width: 1600px) {
+    #text_stapleton {
+        bottom: 44%;
+    }
+}
+
+@media (max-width: 1480px) { 
+    #text_stapleton {
+        bottom: 39%;
+    }
+}
+
+@media (max-width: 1430px) { 
+    #monkey_2 {
+        bottom: 35%;
+    }
+}
+
+@media (max-width: 1380px) { 
+    #text_stapleton {
+        bottom: 34%;
+    }
+}
+
+@media (max-width: 1300px) { 
+    #monkey_1 {
+    bottom: 25%;
+    }
+
+    #monkey_2 {
+        bottom: 30%;
+    }
+
+    #monkey_3 {
+        bottom: 25%;
+    }
+}
+
+@media (max-width: 1280px) { 
+    #text_stapleton {
+        bottom: 30%;
+    }
 }

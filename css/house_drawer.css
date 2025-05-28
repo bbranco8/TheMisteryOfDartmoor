@@ -10,7 +10,7 @@
 }
 
 #photograph {
-    left: 30%;
+    left: 35%;
     top: 30%;
     cursor: pointer;
 }
@@ -19,4 +19,50 @@
 #photograph:hover {
     cursor: pointer;
     transform: rotate(10deg);
+}
+
+/* sherlock's intervention */
+#text_photo {
+    top: 25%;
+    left: 12%;
+}
+
+#sherlock_photo {
+    bottom: -5%;
+    left: 0;
+}
+
+/* responsive */
+@media (max-width: 1600px) {
+    #text_photo {
+        top: 30%;
+    }
+}
+
+@media (max-width: 1470px) { 
+    #text_photo {
+        top: 35%;
+    }
+}
+
+@media (max-width: 1420px) { 
+    #gun {
+        top: 20%;
+    }
+
+    #photograph {
+        top: 25%;
+    }
+}
+
+@media (max-width: 1380px) { 
+    #text_photo {
+        top: 40%;
+    }
+}
+
+@media (max-width: 1280px) { 
+    #text_photo {
+        top: 45%;
+    }
 }

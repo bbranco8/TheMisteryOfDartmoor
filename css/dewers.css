@@ -38,3 +38,55 @@
     background: radial-gradient(circle 240px at var(--x, 50%) var(--y, 50%), transparent 0%, rgba(0, 0, 0, 0.95) 100%);
     z-index: 10;
 }
+
+/* sherlock's intervention */
+#text_warning {
+    top: 28%;
+    right: 18%;
+}
+
+#sherlock_warning {
+    bottom: -5%;
+    right: 5%;
+}
+
+#text_hound {
+    top: 28%;
+    left: 13%;
+}
+
+#sherlock_hound {
+    bottom: -5%;
+    left: 0;
+}
+
+/* responsive */
+@media (max-width: 1600px) {
+    #text_warning, #text_hound {
+        top: 30%;
+    }
+}
+
+@media (max-width: 1540px) {
+    #text_warning, #text_hound {
+        top: 34%;
+    }
+}
+
+@media (max-width: 1480px) { 
+    #text_warning, #text_hound {
+        top: 38%;
+    }
+}
+
+@media (max-width: 1380px) { 
+    #text_warning, #text_hound {
+        top: 44%;
+    }
+}
+
+@media (max-width: 1280px) { 
+    #text_warning, #text_hound {
+        top: 48%;
+    }
+}

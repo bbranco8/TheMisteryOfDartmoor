@@ -150,9 +150,6 @@ main>img {
 #sherlock_pass,
 #text_stapleton,
 #sherlock_stapleton,
-#text_henry,
-#text_pc,
-#sherlock_pc,
 #text_out,
 #sherlock_out,
 #text_lights,
@@ -165,75 +162,12 @@ main>img {
     z-index: 15;
 }
 
-#text_word,
-#text_photo,
-#text_warning,
-#text_pass,
-#text_hound,
-#text_stapleton,
-#text_henry,
-#text_pc,
-#text_drug {
-    width: 27%;
-    margin: 8% 15%;
-}
-
-#text_out {
-    margin: 10% 13%;
-}
-
-#text_henry {
-    margin: 5% 4%;
-}
-
-#text_lights {
-    margin: 10% 67%;
-}
-
-#text_hound {
-    width: 30%;
-}
-
-#text_warning {
-    margin: 10% 55%;
-}
-
-#text_stapleton {
-    margin: 16% 65%;
-}
-
-#text_tv {
-    margin: 18% 11%;
-}
-
-#sherlock_word,
-#sherlock_photo,
-#sherlock_hound,
-#sherlock_pass,
-#sherlock_pc,
-#sherlock_out,
-#sherlock_drug,
-#sherlock_tv {
-    bottom: -5%;
-    left: 0;
-}
-
-#sherlock_warning,
-#sherlock_lights {
-    bottom: -5%;
-    right: 5%;
-}
-
-#sherlock_stapleton {
-    bottom: -5%;
-    right: 35%;
-}
 
 /* Interaction's with the characters */
 .question {
     position: absolute;
-    top: 32%;
-    left: 5%;
+    bottom: 8%;
+    left: 3%;
     z-index: 1000;
 }
 
@@ -248,6 +182,7 @@ main>img {
 }
 
 
+/* sound */
 @keyframes pulse {
 
     0%,

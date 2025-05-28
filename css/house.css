@@ -56,9 +56,25 @@ html {
     cursor: pointer;
 }
 
+/* sherlock's interventions */
+#text_tv {
+    top: 35%;
+    left: 11%;
+}
+
+#sherlock_tv {
+    bottom: -5%;
+    left: 0;
+}
+
+/* responsive */
 @media (max-width: 1600px) { 
     #tv {
         bottom: 41%;
+    }
+
+    #text_tv {
+        top: 40%;
     }
 }
  
@@ -70,10 +86,18 @@ html {
     #book {
         bottom: 8%;
     }
+
+    #text_tv {
+        top: 45%;
+    }
 }
 
 @media (max-width: 1280px) { 
     #tv {
         bottom: 38%;
+    }
+
+     #text_tv {
+        top: 52%;
     }
 }

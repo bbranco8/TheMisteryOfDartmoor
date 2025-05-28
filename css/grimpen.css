@@ -5,7 +5,7 @@
 }
 
 #sign {
-    bottom: 10%;
+    bottom: 25%;
     left: 5%;
 }
 
@@ -14,7 +14,7 @@
     transform: rotate(10deg);
 }
 
-.question > div > img:hover {
-    transform: scale(0.9); 
+.question > .question_images > img:hover {
+    transform: scale(1.1); 
 }
 

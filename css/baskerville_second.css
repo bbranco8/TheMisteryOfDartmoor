@@ -7,10 +7,6 @@
     left: 0;
 }
 
-#wall {
-    top: 30%;
-}
-
 #desks {
     bottom: 0;
     left: 0;
@@ -29,13 +25,13 @@
 
 #doc {
     left: 35%;
-    top: 20%;
+    top: 10%;
     cursor: pointer;
 }
 
 #play_pc {
     right: 23%;
-    top: 25%;
+    top: 15%;
     cursor: pointer;
 }
 
@@ -51,6 +47,7 @@
     cursor: pointer;
 }
 
+/* overlays */
 #image_exit_overlay {
 background-color: white;
 }
@@ -63,7 +60,7 @@ background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 75%;
 }
 
 #fullscreen_image {
@@ -81,4 +78,101 @@ background-color: white;
     pointer-events: none;
     background: radial-gradient(circle 240px at var(--x, 50%) var(--y, 50%), transparent 0%, rgba(57, 10, 10, 0.95) 100%);
     z-index: 10;
+}
+
+/* sherlock's intervention */
+#text_drug {
+    margin: 8% 15%;
+}
+
+#text_out {
+    margin: 10% 13%;
+}
+
+#sherlock_out,
+#sherlock_drug {
+    bottom: -5%;
+    left: 0;
+}
+
+#text_lights {
+    margin: 10% 67%;
+}
+
+#sherlock_lights {
+    bottom: -5%;
+    right: 5%;
+}
+
+
+/* responsive */
+@media (max-width: 1620px) { 
+    #doc {
+        top: 18%;
+    }
+
+    #play_pc {
+        top: 23%;
+    }
+}
+
+@media (max-width: 1580px) { 
+    #pc {
+        bottom: 33%;
+    }
+}
+
+
+@media (max-width: 1500px) { 
+    #pc {
+        bottom: 30%;
+    }
+
+    #doc {
+        top: 23%;
+    }
+
+    #play_pc {
+        top: 26%;
+    }
+}
+
+@media (max-width: 1400px) { 
+    #pc {
+        bottom: 28%;
+    }
+
+    #doc {
+        top: 28%;
+    }
+
+    #play_pc {
+        top: 31%;
+    }
+}
+
+@media (max-width: 1340px) { 
+    #doc {
+        top: 32%;
+    }
+
+    #play_pc {
+        top: 35%;
+    }
+}
+
+@media (max-width: 1300px) { 
+    #pc {
+        bottom: 25%;
+    }
+}
+
+@media (max-width: 1280px) { 
+    #doc {
+        top: 35%;
+    }
+
+    #play_pc {
+        top: 38%;
+    }
 }
