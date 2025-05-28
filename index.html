@@ -11,6 +11,11 @@
 </head>
 
 <body>
+    <div id="screen_message" class="invisible">
+        <p>A larger screen is required to view this website</p>
+        <img src="images/sherlock_1.png" width="15%" alt="sherlock">
+    </div>
+
     <header>
         <a id="next" href="choose_case.html"> <img src="images/nav/next.png" width="100%" alt="NEXT"> </a>
     </header>
@@ -18,14 +23,14 @@
     <main>
         <img src="images/index/background.png" width="100%" height="100%" alt="background">
         <img src="images/index/henry.png" width="50%" style="cursor: pointer;" alt="henry"
-            onmouseover="activate_henry()"
-          onmouseout="deactivate_henry()">
+            onmouseover="activate_henry()" onmouseout="deactivate_henry()">
         <img id="desk" src="images/index/desk.png" width="45%" alt="desk">
         <img id="tv_off" src="images/index/tv_stop.png" width="35%" alt="tv"
-        onclick="window.location.href='index_tv.html';">
+            onclick="window.location.href='index_tv.html';">
 
         <img id="text_henry" src="images/index/text_henry.png" width="15%" alt="text">
 
         <script src="javascript/index.js"></script>
+        <script src="javascript/smaller_screens.js"></script>
     </main>
 </body>

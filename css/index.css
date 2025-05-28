@@ -2,6 +2,10 @@ img {
     bottom: 0;
 }
 
+#text_henry {
+    margin: 5% 4%;
+}
+
 #desk, #tv_off {
     right: 0;
 }
