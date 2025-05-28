@@ -11,6 +11,12 @@
 </head>
 
 <body>
+  <!-- smaller screens -->
+  <div id="screen_message" class="invisible">
+    <p>A larger screen is required to view this website</p>
+    <img src="images/sherlock_1.png" width="15%" alt="sherlock">
+  </div>
+
   <header>
     <img id="play" class="pulse" src="images/nav/no_sound_1.png" alt="sound">
     <a id="map" href="map.html"><img src="images/nav/map.png" width="80%" alt="MAP"> </a>
@@ -33,17 +39,14 @@
         <p id="culprit_result"></p>
       </div>
     </div>
-    
+
     <!-- main page -->
     <img id="florest" src="images/dewers/florest.png" height="100%" width="100%" alt="florest">
     <img id="footprints" src="images/dewers/footprints.png" width="13%" alt="wall">
-    <img id="warning" src="images/dewers/warning.png" width="20%" alt="table"
-          onmouseover="activate_warning()"
-          onmouseout="deactivate_warning()"
-          onclick="addClue('warning', 'images/dewers/warning.png');">
+    <img id="warning" src="images/dewers/warning.png" width="20%" alt="table" onmouseover="activate_warning()"
+      onmouseout="deactivate_warning()" onclick="addClue('warning', 'images/dewers/warning.png');">
     <div id="dog_box">
-      <img id="dog" src="images/dewers/dog.png" alt="dog"
-            onclick="addClue('dog', 'images/dewers/dog.png');">
+      <img id="dog" src="images/dewers/dog.png" alt="dog" onclick="addClue('dog', 'images/dewers/dog.png');">
     </div>
 
     <div id="dark_overlay"></div>

@@ -10,6 +10,12 @@
 </head>
 
 <body>
+  <!-- smaller screens -->
+  <div id="screen_message" class="invisible">
+    <p>A larger screen is required to view this website</p>
+    <img src="images/sherlock_1.png" width="15%" alt="sherlock">
+  </div>
+
   <header>
     <a id="back" href="house.html"><img src="images/nav/back.png" width="100%" alt="BACK"></a>
     <a id="clues" href="#" id="open_clues"><img src="images/nav/clues.png" width="80%" alt="CLUES"></a>
@@ -35,11 +41,10 @@
     <!-- main page -->
     <img src="images/house/wood.png" width="100%" height="100%" alt="background">
     <img id="book" src="images/house/book_open.png" width="90%" alt="book">
-    <img id="word" src="images/house/word_1.png" width="15%" alt="word" 
-         onclick="addClue('word_1', 'images/house/word_1.png');">
-    <img id="word_2" src="images/house/word_2.png" width="10%" alt="word_2"
-         onmouseover="activate_word()" onmouseout="deactivate_word()" 
-         onclick="addClue('word_2', 'images/house/word_2.png');">
+    <img id="word" src="images/house/word_1.png" width="15%" alt="word"
+      onclick="addClue('word_1', 'images/house/word_1.png');">
+    <img id="word_2" src="images/house/word_2.png" width="10%" alt="word_2" onmouseover="activate_word()"
+      onmouseout="deactivate_word()" onclick="addClue('word_2', 'images/house/word_2.png');">
 
     <!-- sherlock's reflection -->
     <img id="text_word" src="images/house/text_word.png" width="22%" alt="text">

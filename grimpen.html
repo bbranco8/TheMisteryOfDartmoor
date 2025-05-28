@@ -11,6 +11,12 @@
 </head>
 
 <body>
+  <!-- smaller screens -->
+  <div id="screen_message" class="invisible">
+    <p>A larger screen is required to view this website</p>
+    <img src="images/sherlock_1.png" width="15%" alt="sherlock">
+  </div>
+
   <header>
     <img id="play" class="pulse" src="images/nav/no_sound.png" alt="sound">
     <a id="map" href="map.html"><img src="images/nav/map.png" width="80%" alt="MAP"> </a>
@@ -37,19 +43,19 @@
     <!-- main page -->
     <img src="images/grimpen/background.png" height="100%" width="100%" alt="background">
     <img id="sign" src="images/grimpen/sign.png" width="13%" alt="sign"
-        onclick="addClue('sign', 'images/grimpen/sign.png');">
+      onclick="addClue('sign', 'images/grimpen/sign.png');">
     <img id="hunter" src="images/grimpen/hunter.png" width="15%" alt="hunter"
-    onclick="addClue('hunter', 'images/grimpen/hunter.png');">
+      onclick="addClue('hunter', 'images/grimpen/hunter.png');">
 
     <!-- questions and answers for frankland -->
     <section id="hunter_questions" class="question hidden">
       <div class="question_images">
-        <img src="images/grimpen/questions/question_hunter_1.png" width="53%" alt="question"
-             id="question_1" onclick="show_answer('q1')">
-        <img src="images/grimpen/questions/question_hunter_2.png" width="53%" alt="question"
-             id="question_2" onclick="show_answer('q2')">
-        <img src="images/grimpen/questions/question_hunter_3.png" width="53%" alt="question"
-             id="question_3" onclick="show_answer('q3')">
+        <img src="images/grimpen/questions/question_hunter_1.png" width="53%" alt="question" id="question_1"
+          onclick="show_answer('q1')">
+        <img src="images/grimpen/questions/question_hunter_2.png" width="53%" alt="question" id="question_2"
+          onclick="show_answer('q2')">
+        <img src="images/grimpen/questions/question_hunter_3.png" width="53%" alt="question" id="question_3"
+          onclick="show_answer('q3')">
       </div>
       <div id="answer_container" class="hidden">
         <img id="answer" src="" width="53%" alt="answer">

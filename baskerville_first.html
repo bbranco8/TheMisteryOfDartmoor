@@ -11,6 +11,12 @@
 </head>
 
 <body>
+  <!-- smaller screens -->
+  <div id="screen_message" class="invisible">
+    <p>A larger screen is required to view this website</p>
+    <img src="images/sherlock_1.png" width="15%" alt="sherlock">
+  </div>
+
   <header>
     <img id="play" class="pulse" src="images/nav/no_sound.png" alt="sound">
     <a id="map" href="map.html"><img src="images/nav/map.png" width="80%" alt="MAP"> </a>
@@ -47,18 +53,18 @@
     <img id="monkey_3" src="images/baskerville/first/monkey.png" width="8%" alt="monkey">
     <img id="cage" src="images/baskerville/first/cage.png" width="40%" alt="cage">
     <img id="dr_stapland" src="images/baskerville/first/dr_stapleton.png" width="15%" alt="dr_stapland"
-    onclick="addClue('dr_stapleton', 'images/baskerville/first/dr_stapleton.png');"
-    onmouseover="activate_stapleton()" onmouseout="deactivate_stapleton()">
+      onclick="addClue('dr_stapleton', 'images/baskerville/first/dr_stapleton.png');" onmouseover="activate_stapleton()"
+      onmouseout="deactivate_stapleton()">
     <img id="dr_frankland" src="images/baskerville/first/dr_frankland.png" width="15%" alt="dr_frankland"
-    onclick="addClue('dr_frankland', 'images/baskerville/first/dr_frankland.png');">
+      onclick="addClue('dr_frankland', 'images/baskerville/first/dr_frankland.png');">
 
     <!-- questions and answers for frankland -->
     <section id="frankland_questions" class="question hidden">
       <div class="question_images">
         <img src="images/baskerville/first/questions/question_frankland_1.png" width="53%" alt="question"
-             id="question_1" onclick="show_answer('q1')">
+          id="question_1" onclick="show_answer('q1')">
         <img src="images/baskerville/first/questions/question_frankland_2.png" width="53%" alt="question"
-             id="question_2" onclick="show_answer('q2')">
+          id="question_2" onclick="show_answer('q2')">
       </div>
       <div id="answer_container" class="hidden">
         <img id="answer" src="" width="53%" alt="answer">
