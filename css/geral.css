@@ -8,22 +8,31 @@ body {
     margin: 0;
 }
 
-header {
+header > a,
+header > img {
+    z-index: 20;
     position: absolute;
-    display: flex;
-    z-index: 15;
-    width: 95%;
-    padding: 2%;
-    justify-content: end;
+    cursor: pointer;
 }
 
-.sound {
-    justify-content: space-between;
+#back, #play {
+    top: 4%;
+    left: 2%;
 }
 
-.sound>div {
-    display: flex;
-    gap: 8%;
+#next {
+    top: 4%;
+    right: 2%;
+}
+
+#clues {
+    bottom: 2%;
+    right: 0.5%;
+}
+
+#map {
+    bottom: 2%;
+    right: 8%;
 }
 
 a {
@@ -98,12 +107,12 @@ main>img {
     top: 40%;
 }
 
-.guess_area > div {
-    display: flex; 
+.guess_area>div {
+    display: flex;
     flex-direction: row;
 }
 
-.guess_area > div > input {
+.guess_area>div>input {
     padding: 3% 5%;
     background: #f0d3aa;
     color: #925c10;
@@ -115,7 +124,7 @@ main>img {
     font-size: 1rem;
 }
 
-.guess_area > div > button {
+.guess_area>div>button {
     padding: 3% 5%;
     background: #f0d3aa;
     color: #925c10;
@@ -174,7 +183,7 @@ main>img {
 }
 
 #text_henry {
-    margin: 36% 23%;
+    margin: 5% 4%;
 }
 
 #text_lights {
@@ -240,9 +249,12 @@ main>img {
 
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.08);
     }

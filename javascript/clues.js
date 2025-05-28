@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const open = document.querySelector('#open_clues');
+  const open = document.querySelector('#clues');
   const close = document.querySelector('#close_clues');
   const overlay = document.querySelector('#clues_overlay');
   const submitBtn = document.querySelector('#submit_culprit');

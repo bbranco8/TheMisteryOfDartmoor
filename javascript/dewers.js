@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sound_on) {
       sound_1.play();
       sound_2.play();
-      play.src = "images/nav/sound.png";
+      play.src = "images/nav/sound_1.png";
       play.classList.remove("pulse"); // REMOVE animação
     } else {
       sound_1.pause();
       sound_2.pause();
-      play.src = "images/nav/no_sound.png";
+      play.src = "images/nav/no_sound_1.png";
       play.classList.add("pulse"); // ADICIONA animação
     }
 

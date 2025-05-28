@@ -11,8 +11,38 @@ img {
     cursor: pointer;
 }
 
-#play {
-    bottom: 68%;
+#play_tv {
+    top: 15%;
     right: 26%;
     cursor: pointer;
 }
+
+@media (max-width: 1680px) { 
+    #play_tv {
+        top: 20%;
+    }
+}
+
+@media (max-width: 1580px) { 
+    #play_tv {
+        top: 25%;
+    }
+}
+
+@media (max-width: 1480px) { 
+    #play_tv {
+        top: 30%;
+    }
+} 
+
+@media (max-width: 1380px) { 
+    #play_tv {
+        top: 35%;
+    }
+} 
+
+@media (max-width: 1280px) { 
+    #play_tv {
+        top: 40%;
+    }
+} 
