@@ -80,7 +80,7 @@ let frankland = document.querySelector('#dr_frankland');
 let questions = document.querySelector('#frankland_questions');
 let question_images = document.querySelector('.question_images');
 let answer_container = document.querySelector('#answer_container');
-let answer_image = document.querySelector('#answer');
+let answer_image = document.querySelector('#answer_image');
 let question1 = document.querySelector('#question_1');
 let question2 = document.querySelector('#question_2');
 
