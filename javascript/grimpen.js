@@ -3,7 +3,7 @@ let hunter = document.querySelector('#hunter');
 let questions = document.querySelector('#hunter_questions');
 let question_images = document.querySelector('.question_images');
 let answer_container = document.querySelector('#answer_container');
-let answer_image = document.querySelector('#answer');
+let answer_image = document.querySelector('#answer_image');
 let question1 = document.querySelector('#question_1');
 let question2 = document.querySelector('#question_2');
 let question3 = document.querySelector('#question_3');
@@ -82,13 +82,13 @@ function show_answer(question_id) {
     let answer_src = '';
     switch (question_id) {
         case 'q1':
-            answer_src = 'images/grimpen/questions/answer_hunter_1.png';
+            answer_src = '/images/grimpen/questions/answer_hunter_1.png';
             break;
         case 'q2':
-            answer_src = 'images/grimpen/questions/answer_hunter_2.png';
+            answer_src = '/images/grimpen/questions/answer_hunter_2.png';
             break;
         case 'q3':
-            answer_src = 'images/grimpen/questions/answer_hunter_3.png';
+            answer_src = '/images/grimpen/questions/answer_hunter_3.png';
             break;
     }
 
