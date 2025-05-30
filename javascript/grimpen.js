@@ -82,13 +82,13 @@ function show_answer(question_id) {
     let answer_src = '';
     switch (question_id) {
         case 'q1':
-            answer_src = '/images/grimpen/questions/answer_hunter_1.png';
+            answer_src = 'images/grimpen/questions/answer_hunter_1.png';
             break;
         case 'q2':
-            answer_src = '/images/grimpen/questions/answer_hunter_2.png';
+            answer_src = 'images/grimpen/questions/answer_hunter_2.png';
             break;
         case 'q3':
-            answer_src = '/images/grimpen/questions/answer_hunter_3.png';
+            answer_src = 'images/grimpen/questions/answer_hunter_3.png';
             break;
     }
 
