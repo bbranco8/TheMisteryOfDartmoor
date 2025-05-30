@@ -13,6 +13,7 @@ let selected_question = null; // To track which question was selected
 let sound = document.querySelector("#sound");
 let play = document.querySelector("#play");
 
+// SOUND
 document.addEventListener('DOMContentLoaded', () => {
   let sound_on = false;
   play.addEventListener("click", () => {
@@ -31,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Toggle question box and show both questions (after clicking Dr. Frankland)
+// --------------------------------------
+// QUESTIONS AND ANSWERS FOR HUNTER
 hunter.addEventListener('mouseover', (event) => {
     event.stopPropagation();
 

@@ -86,28 +86,27 @@ let question2 = document.querySelector('#question_2');
 
 let selected_question = null; // To track which question was selected
 
-// Toggle question box and show both questions (after clicking Dr. Frankland)
 frankland.addEventListener('mouseover', (event) => {
-    // Prevent click from propagating to the document
     event.stopPropagation();
 
-    let hidden = questions.classList.contains('hidden');
-    questions.classList.toggle('hidden', !hidden);
+    // Only show questions if currently hidden
+    if (questions.classList.contains('hidden')) {
+        questions.classList.remove('hidden');
 
-    // Reset view: show questions, hide answer, and make both questions available
-    question1.classList.remove('disabled');
-    question2.classList.remove('disabled');
-    question_images.classList.remove('hidden');
-    answer_container.classList.add('hidden');
-    answer_image.classList.add('hidden');
-    answer_image.src = '';
+        // Reset view
+        question1.classList.remove('disabled');
+        question2.classList.remove('disabled');
+        question_images.classList.remove('hidden');
+        answer_container.classList.add('hidden');
+        answer_image.classList.add('hidden');
+        answer_image.src = '';
 
-    // If a question was previously selected, make it available, and disable the other
-    if (selected_question) {
-        if (selected_question === 'q1') {
-            question2.classList.add('disabled');
-        } else if (selected_question === 'q2') {
-            question1.classList.add('disabled');
+        if (selected_question) {
+            if (selected_question === 'q1') {
+                question2.classList.add('disabled');
+            } else if (selected_question === 'q2') {
+                question1.classList.add('disabled');
+            } 
         }
     }
 });
